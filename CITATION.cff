@@ -9,3 +9,15 @@ version: 18.0
 date-release: 2023-APR-08
 doi: 10.5281/zenodo.7812910
 url: "https://doi.org/10.5281/zenodo.7812910"
+
+@software{mrkento11_2023_7812910,
+  author       = {Kenny Giron},
+  title        = {{mrkento11/Master-Thesis: Functioning Version: 8 
+                   APR 2023}},
+  month        = apr,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = 18,
+  doi          = {10.5281/zenodo.7812910},
+  url          = {https://doi.org/10.5281/zenodo.7812910}
+}
