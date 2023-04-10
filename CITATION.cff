@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+cff-version: 1.0
 message: "Please, if you use this code, cite as below."
 author:
 - family-names: Giron Navarro
@@ -7,3 +7,5 @@ author:
 title: "Hard Linking GEP with UCP for flexibility verification: Code"
 version: 18
 date-release: 2023-APR-08
+doi: 10.5281/zenodo.7812910
+url: "https://doi.org/10.5281/zenodo.7812910"
