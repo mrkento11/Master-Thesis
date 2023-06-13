@@ -1,0 +1,3068 @@
+   00:02:35
+
+This is iteration: 1
+   11-Jun-2023 11:38:24
+
+First Stage: Generation Expansion Problem
+Set parameter Username
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.01
+Set parameter Heuristics to value 0.15
+Set parameter MIPFocus to value 3
+Set parameter NonConvex to value 2
+Set parameter NumericFocus to value 2
+Set parameter Seed to value 959
+Set parameter ImproveStartGap to value 0.03
+Academic license - for non-commercial use only - expires 2024-05-08
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 89081 rows, 46680 columns and 232747 nonzeros
+Model fingerprint: 0xe3d17976
+Model has 7260 quadratic constraints
+Variable types: 41400 continuous, 5280 integer (3780 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+06]
+  QMatrix range    [5e-01, 5e+02]
+  QLMatrix range   [1e+00, 5e+02]
+  Objective range  [9e+00, 1e+09]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+08]
+Warning: Model contains large objective coefficients
+Presolve removed 61767 rows and 12661 columns
+Presolve time: 0.39s
+Presolved: 44114 rows, 37379 columns, 154553 nonzeros
+Variable types: 29912 continuous, 7467 integer (3593 binary)
+Root relaxation presolve removed 10119 rows and 3440 columns
+Root relaxation presolved: 33995 rows, 33939 columns, 130866 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 4.735389e+10, 20206 iterations, 2.28 seconds (1.33 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4.7354e+10    0  218          - 4.7354e+10      -     -    4s
+H    0     0                    1.191294e+11 4.7354e+10  60.3%     -    4s
+H    0     0                    1.190828e+11 4.7354e+10  60.2%     -    5s
+H    0     0                    1.190031e+11 4.7354e+10  60.2%     -    5s
+H    0     0                    9.259391e+10 4.7357e+10  48.9%     -    8s
+H    0     0                    9.216866e+10 4.7357e+10  48.6%     -    8s
+     0     0 4.7589e+10    0  846 9.2169e+10 4.7589e+10  48.4%     -   11s
+     0     0 4.7589e+10    0  848 9.2169e+10 4.7589e+10  48.4%     -   12s
+     0     0 4.7590e+10    0  852 9.2169e+10 4.7590e+10  48.4%     -   13s
+     0     0 4.7619e+10    0  852 9.2169e+10 4.7619e+10  48.3%     -   13s
+     0     0 4.7624e+10    0  659 9.2169e+10 4.7624e+10  48.3%     -   17s
+H    0     0                    5.320987e+10 4.7624e+10  10.5%     -   18s
+H    0     2                    5.316334e+10 4.7624e+10  10.4%     -   19s
+     0     2 4.7624e+10    0  659 5.3163e+10 4.7624e+10  10.4%     -   19s
+     1     4 4.7752e+10    1  697 5.3163e+10 4.7624e+10  10.4%  1187   20s
+H   27    32                    5.315713e+10 4.7828e+10  10.0%   422   26s
+H   28    32                    5.307166e+10 4.7828e+10  9.88%   409   26s
+    51    56 4.7864e+10   12  374 5.3072e+10 4.7856e+10  9.83%   328   30s
+H   57    62                    5.306734e+10 4.7862e+10  9.81%   307   30s
+H   59    62                    5.302860e+10 4.7862e+10  9.74%   299   30s
+H   88   122                    5.302383e+10 4.7863e+10  9.73%   238   36s
+H   97   122                    5.298566e+10 4.7865e+10  9.66%   224   36s
+H  105   122                    5.297154e+10 4.7865e+10  9.64%   214   36s
+   170   209 4.7866e+10   17  372 5.2972e+10 4.7866e+10  9.64%   149   40s
+H  223   235                    5.296717e+10 4.7867e+10  9.63%   142   43s
+H  226   235                    5.294334e+10 4.7867e+10  9.59%   145   43s
+H  228   235                    5.294002e+10 4.7867e+10  9.58%   144   43s
+   234   252 4.7867e+10   12  360 5.2940e+10 4.7867e+10  9.58%   142   45s
+H  258   270                    5.290820e+10 4.7868e+10  9.53%   141   47s
+H  259   270                    5.290568e+10 4.7869e+10  9.52%   143   47s
+H  295   313                    5.289095e+10 4.7875e+10  9.48%   139   52s
+H  300   311                    4.838841e+10 4.7875e+10  1.06%   137   52s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+H  312   322                    4.838248e+10 4.7876e+10  1.05%   137   54s
+   312   322 4.7921e+10   16  430 4.8382e+10 4.7876e+10  1.05%   137   54s
+H  313   322                    4.838202e+10 4.7876e+10  1.05%   137   54s
+H  314   320                    4.826655e+10 4.7876e+10  0.81%   137   54s
+
+Cutting planes:
+  Learned: 53
+  Lift-and-project: 50
+  Implied bound: 4
+  MIR: 817
+  StrongCG: 6
+  Flow cover: 108
+  Zero half: 6
+  RLT: 11
+  Relax-and-lift: 7
+
+Explored 325 nodes (69186 simplex iterations) in 54.54 seconds (24.37 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 4.82665e+10 4.8382e+10 4.83825e+10 ... 5.29672e+10
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 4.826654821722e+10, best bound 4.787597780545e+10, gap 0.8092%
+The accumulated investment decision variable Xit: 
+
+                        <strong>2021</strong>    <strong>2022</strong>    <strong>2023</strong>    <strong>2024</strong>    <strong>2025</strong>    <strong>2026</strong>    <strong>2027</strong>    <strong>2028</strong>    <strong>2029</strong>    <strong>2030</strong>    <strong>2031</strong>    <strong>2032</strong>    <strong>2033</strong>    <strong>2034</strong>    <strong>2035</strong>    <strong>2036</strong>    <strong>2037</strong>    <strong>2038</strong>    <strong>2039</strong>    <strong>2040</strong>    <strong>2041</strong>    <strong>2042</strong>    <strong>2043</strong>    <strong>2044</strong>    <strong>2045</strong>    <strong>2046</strong>    <strong>2047</strong>    <strong>2048</strong>    <strong>2049</strong>    <strong>2050</strong>
+                        <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>
+
+    <strong>Coal-Cand       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT1-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT2-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>OCGT-Cand       </strong>     3       4       4       4       4       4       4       4       4       4       4       4       4       4       4       4       4        4       4       4       4       4       4       4       4       4       4       4       4       4 
+    <strong>Advanced Nuclear</strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       1       1       1 
+    <strong>SMR-Nuclear     </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       8 
+    <strong>GeoThermal-Cand </strong>     0       0       0       0       0       0       0       0       0       0       0       1       1       1       1       1       1        1       1       1       1       1       1       1       1       1       1       1       1       1 
+    <strong>Solar-Cand      </strong>     0       0       1       1       1       1       2       3       3       5       5       6       6       6       7       8       8       10      11      11      11      12      13      14      14      15      15      16      17      17 
+    <strong>Wind-Cand       </strong>     0       0       0       0       1       1       1       1       1       2       2       2       2       2       3       3       3        4       4       4       5       5       5       5       5       6       7       7       7       7 
+    <strong>Battery4h       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       1       1       1       1       1       1 
+    <strong>Battery2h       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       1       2       3       4       4       5       5       7       7 
+
+The total cost of this GEP is: 48,266,548,217.224 USD
+
+First Stage UCP verification
+Year currently under study: 2021- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,872,272.692 USD
+The cost associated with this UCP (Most Net Load) is: 55,218,248.684 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,759,080.347 USD
+The cost associated with this UCP (Least Net Load) is: 28,095,286.83 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,955,757.549 USD
+The average curtailment for the study weeks is: 0
+
+Year 2021 finished.
+
+Year currently under study: 2022- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 58,210,965.422 USD
+The cost associated with this UCP (Most Net Load) is: 57,742,715.281 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,280,697.079 USD
+The cost associated with this UCP (Least Net Load) is: 29,187,886.156 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,433,778.821 USD
+The average curtailment for the study weeks is: 0
+
+Year 2022 finished.
+
+Year currently under study: 2023- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 53,426,814.246 USD
+The cost associated with this UCP (Most Net Load) is: 51,872,490.249 USD
+The cost associated with this UCP (Least Renewable Generation) is: 35,807,712.79 USD
+The cost associated with this UCP (Least Net Load) is: 27,248,729.003 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,461,233.436 USD
+The average curtailment for the study weeks is: 0
+
+Year 2023 finished.
+
+Year currently under study: 2024- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,070,495.642 USD
+The cost associated with this UCP (Most Net Load) is: 54,438,787.202 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,270,001.842 USD
+The cost associated with this UCP (Least Net Load) is: 28,913,788.435 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,425,100.477 USD
+The average curtailment for the study weeks is: 0
+
+Year 2024 finished.
+
+Year currently under study: 2025- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,414,765.056 USD
+The cost associated with this UCP (Most Net Load) is: 55,175,696.2 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,352,407.919 USD
+The cost associated with this UCP (Least Net Load) is: 24,983,001.03 USD
+The cost associated with this UCP (Most Renewable Generation) is: 30,097,738.705 USD
+The average curtailment for the study weeks is: 0
+
+Year 2025 finished.
+
+Year currently under study: 2026- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 61,212,948.351 USD
+The cost associated with this UCP (Most Net Load) is: 59,730,491.44 USD
+The cost associated with this UCP (Least Renewable Generation) is: 40,661,157.658 USD
+The cost associated with this UCP (Least Net Load) is: 26,101,091.803 USD
+The cost associated with this UCP (Most Renewable Generation) is: 32,172,742.183 USD
+The average curtailment for the study weeks is: 0
+
+Year 2026 finished.
+
+Year currently under study: 2027- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 61,674,893.338 USD
+The cost associated with this UCP (Most Net Load) is: 60,716,327.799 USD
+The cost associated with this UCP (Least Renewable Generation) is: 40,571,092.37 USD
+The cost associated with this UCP (Least Net Load) is: 43,797,340.635 USD
+The cost associated with this UCP (Most Renewable Generation) is: 36,983,808.584 USD
+The average curtailment for the study weeks is: 0.013
+
+Year 2027 finished.
+
+Year currently under study: 2028- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 41,769,353.816 USD
+The cost associated with this UCP (Least Net Load) is: 79,490,128.768 USD
+The cost associated with this UCP (Most Renewable Generation) is: 61,027,145.821 USD
+The average curtailment for the study weeks is: 0.072
+
+Year 2028 finished.
+
+Year currently under study: 2029- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 45,300,987.03 USD
+The cost associated with this UCP (Least Net Load) is: 77,353,500.565 USD
+The cost associated with this UCP (Most Renewable Generation) is: 59,275,815.219 USD
+The average curtailment for the study weeks is: 0.061
+
+Year 2029 finished.
+
+Year currently under study: 2030- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 67,656,762.243 USD
+The cost associated with this UCP (Least Net Load) is: 194,437,728.208 USD
+This case curtailment is: 0.291
+The cost associated with this UCP (Most Renewable Generation) is: 163,567,122.12 USD
+This case curtailment is: 0.223
+The average curtailment for the study weeks is: 0.194
+
+Year 2030 finished.
+
+Year currently under study: 2031- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 67,487,515.732 USD
+The cost associated with this UCP (Least Net Load) is: 188,994,258.736 USD
+This case curtailment is: 0.274
+The cost associated with this UCP (Most Renewable Generation) is: 157,101,779.511 USD
+This case curtailment is: 0.208
+The average curtailment for the study weeks is: 0.179
+
+Year 2031 finished.
+
+Year currently under study: 2032- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 92,122,976.442 USD
+The cost associated with this UCP (Least Net Load) is: 231,448,106.503 USD
+This case curtailment is: 0.322
+The cost associated with this UCP (Most Renewable Generation) is: 199,611,169.37 USD
+This case curtailment is: 0.252
+The average curtailment for the study weeks is: 0.224
+
+Year 2032 finished.
+
+Year currently under study: 2033- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 90,906,833.198 USD
+The cost associated with this UCP (Least Net Load) is: 226,290,671.382 USD
+This case curtailment is: 0.309
+The cost associated with this UCP (Most Renewable Generation) is: 193,757,180.944 USD
+This case curtailment is: 0.236
+The average curtailment for the study weeks is: 0.21
+
+Year 2033 finished.
+
+Year currently under study: 2034- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 90,658,925.696 USD
+The cost associated with this UCP (Least Net Load) is: 220,628,150.068 USD
+This case curtailment is: 0.295
+The cost associated with this UCP (Most Renewable Generation) is: 188,097,639.655 USD
+This case curtailment is: 0.219
+The average curtailment for the study weeks is: 0.195
+
+Year 2034 finished.
+
+Year currently under study: 2035- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 117,452,632.176 USD
+The cost associated with this UCP (Least Net Load) is: 295,677,666.702 USD
+This case curtailment is: 0.337
+The cost associated with this UCP (Most Renewable Generation) is: 261,031,593.623 USD
+This case curtailment is: 0.275
+The average curtailment for the study weeks is: 0.24
+
+Year 2035 finished.
+
+Year currently under study: 2036- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 339,918,648.876 USD
+This case curtailment is: 0.364
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.364
+
+Year 2036 finished.
+
+Year currently under study: 2037- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 332,924,194.694 USD
+This case curtailment is: 0.35
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.35
+
+Year 2037 finished.
+
+Year currently under study: 2038- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 465,264,934.667 USD
+This case curtailment is: 0.412
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.412
+
+Year 2038 finished.
+
+Year currently under study: 2039- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 510,915,799.102 USD
+This case curtailment is: 0.43
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.43
+
+Year 2039 finished.
+
+Year currently under study: 2040- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 504,497,150.515 USD
+This case curtailment is: 0.418
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.418
+
+Year 2040 finished.
+
+Year currently under study: 2041- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 530,784,568.444 USD
+This case curtailment is: 0.409
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.409
+
+Year 2041 finished.
+
+Year currently under study: 2042- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 568,695,180.553 USD
+This case curtailment is: 0.419
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.419
+
+Year 2042 finished.
+
+Year currently under study: 2043- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 608,095,578.553 USD
+This case curtailment is: 0.428
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.428
+
+Year 2043 finished.
+
+Year currently under study: 2044- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+This case is not feasible.
+Least Net Load is not feasible.
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: �
+
+Year 2044 finished.
+
+Year currently under study: 2045- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+This case is not feasible.
+Least Net Load is not feasible.
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: �
+
+Year 2045 finished.
+
+Year currently under study: 2046- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+This case is not feasible.
+Least Net Load is not feasible.
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: �
+
+Year 2046 finished.
+
+Year currently under study: 2047- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+This case is not feasible.
+Least Net Load is not feasible.
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: �
+
+Year 2047 finished.
+
+Year currently under study: 2048- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 789,247,596.788 USD
+This case curtailment is: 0.449
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.449
+
+Year 2048 finished.
+
+Year currently under study: 2049- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 823,005,756.195 USD
+This case curtailment is: 0.452
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.452
+
+Year 2049 finished.
+
+Year currently under study: 2050- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 743,675,858.7 USD
+This case curtailment is: 0.407
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.407
+
+Year 2050 finished.
+
+System Operating Reserve is incremented from 10% to 20%.
+
+This is iteration: 2
+   11-Jun-2023 11:44:44
+
+First Stage: Generation Expansion Problem
+Set parameter Username
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.01
+Set parameter Heuristics to value 0.15
+Set parameter MIPFocus to value 3
+Set parameter NonConvex to value 2
+Set parameter NumericFocus to value 2
+Set parameter Seed to value 959
+Set parameter ImproveStartGap to value 0.03
+Academic license - for non-commercial use only - expires 2024-05-08
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 89081 rows, 46680 columns and 232747 nonzeros
+Model fingerprint: 0x3eb7d19f
+Model has 7260 quadratic constraints
+Variable types: 41400 continuous, 5280 integer (3780 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+06]
+  QMatrix range    [5e-01, 5e+02]
+  QLMatrix range   [1e+00, 5e+02]
+  Objective range  [9e+00, 1e+09]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+08]
+Warning: Model contains large objective coefficients
+Presolve removed 61767 rows and 12661 columns
+Presolve time: 0.43s
+Presolved: 44114 rows, 37379 columns, 154553 nonzeros
+Variable types: 29912 continuous, 7467 integer (3593 binary)
+Root relaxation presolve removed 10119 rows and 3440 columns
+Root relaxation presolved: 33995 rows, 33939 columns, 130866 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 4.845790e+10, 19132 iterations, 2.43 seconds (1.15 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4.8458e+10    0  249          - 4.8458e+10      -     -    4s
+H    0     0                    8.319852e+10 4.8458e+10  41.8%     -    5s
+H    0     0                    8.313724e+10 4.8458e+10  41.7%     -    5s
+H    0     0                    8.311482e+10 4.8458e+10  41.7%     -    5s
+     0     0 4.8738e+10    0  913 8.3115e+10 4.8738e+10  41.4%     -   12s
+     0     0 4.8739e+10    0  919 8.3115e+10 4.8739e+10  41.4%     -   13s
+     0     0 4.8740e+10    0  916 8.3115e+10 4.8740e+10  41.4%     -   14s
+     0     0 4.8740e+10    0  912 8.3115e+10 4.8740e+10  41.4%     -   15s
+     0     0 4.8740e+10    0  697 8.3115e+10 4.8740e+10  41.4%     -   19s
+H    0     0                    5.447100e+10 4.8740e+10  10.5%     -   20s
+H    0     0                    5.442586e+10 4.8740e+10  10.4%     -   21s
+H    0     2                    5.432057e+10 4.8740e+10  10.3%     -   22s
+     0     2 4.8740e+10    0  697 5.4321e+10 4.8740e+10  10.3%     -   22s
+    11    16 4.9130e+10    4  543 5.4321e+10 4.8874e+10  10.0%   825   25s
+H   27    32                    5.414909e+10 4.8935e+10  9.63%   646   30s
+H   57    62                    5.110052e+10 4.8959e+10  4.19%   595   35s
+H   58    62                    5.106092e+10 4.8959e+10  4.12%   596   35s
+H   86    94                    5.105773e+10 4.8970e+10  4.09%   489   39s
+H   88    94                    5.105666e+10 4.8971e+10  4.09%   481   39s
+H   90    94                    5.105615e+10 4.8971e+10  4.08%   475   39s
+    93   100 4.9022e+10    9  524 5.1056e+10 4.8972e+10  4.08%   482   40s
+H  131   142                    5.105486e+10 4.8978e+10  4.07%   380   43s
+   141   159 4.9114e+10    9  642 5.1055e+10 4.8979e+10  4.07%   360   45s
+H  160   181                    5.105387e+10 4.8980e+10  4.06%   361   47s
+H  168   181                    5.105367e+10 4.8980e+10  4.06%   345   47s
+H  172   181                    5.105349e+10 4.8980e+10  4.06%   343   47s
+H  219   236                    5.105298e+10 4.8982e+10  4.06%   284   51s
+H  228   236                    5.105293e+10 4.8982e+10  4.06%   274   51s
+H  236   236                    5.105291e+10 4.8983e+10  4.06%   300   51s
+H  265   290                    5.105271e+10 4.8983e+10  4.05%   324   55s
+H  279   290                    5.105228e+10 4.8984e+10  4.05%   309   55s
+H  322   332                    5.105169e+10 4.8986e+10  4.05%   280   59s
+   339   368 4.8988e+10    9  590 5.1052e+10 4.8988e+10  4.04%   276   60s
+H  392   408                    5.105151e+10 4.8989e+10  4.04%   246   62s
+   419   478 4.9029e+10    8  659 5.1052e+10 4.8993e+10  4.03%   255   65s
+H  449   478                    5.105141e+10 4.8993e+10  4.03%   240   65s
+H  509   523                    5.104914e+10 4.8993e+10  4.03%   232   68s
+H  523   515                    4.959245e+10 4.8994e+10  1.21%   250   68s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+H  538   537                    4.959218e+10 4.8994e+10  1.21%   244   71s
+   538   537 4.9148e+10   27  514 4.9592e+10 4.8994e+10  1.21%   244   71s
+H  539   537                    4.959204e+10 4.8994e+10  1.21%   244   71s
+H  541   537                    4.955864e+10 4.8994e+10  1.14%   243   71s
+H  548   537                    4.954384e+10 4.8995e+10  1.11%   243   71s
+H  560   574                    4.954221e+10 4.8995e+10  1.10%   242   77s
+H  561   574                    4.954220e+10 4.8995e+10  1.10%   242   77s
+H  578   574                    4.945517e+10 4.8995e+10  0.93%   237   77s
+
+Cutting planes:
+  Learned: 62
+  Lift-and-project: 58
+  Implied bound: 6
+  MIR: 785
+  StrongCG: 5
+  Flow cover: 66
+  RLT: 3
+  Relax-and-lift: 4
+
+Explored 597 nodes (164848 simplex iterations) in 77.29 seconds (39.80 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 4.94552e+10 4.95422e+10 4.95422e+10 ... 5.10514e+10
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 4.945517165021e+10, best bound 4.899529367903e+10, gap 0.9299%
+The accumulated investment decision variable Xit: 
+
+                        <strong>2021</strong>    <strong>2022</strong>    <strong>2023</strong>    <strong>2024</strong>    <strong>2025</strong>    <strong>2026</strong>    <strong>2027</strong>    <strong>2028</strong>    <strong>2029</strong>    <strong>2030</strong>    <strong>2031</strong>    <strong>2032</strong>    <strong>2033</strong>    <strong>2034</strong>    <strong>2035</strong>    <strong>2036</strong>    <strong>2037</strong>    <strong>2038</strong>    <strong>2039</strong>    <strong>2040</strong>    <strong>2041</strong>    <strong>2042</strong>    <strong>2043</strong>    <strong>2044</strong>    <strong>2045</strong>    <strong>2046</strong>    <strong>2047</strong>    <strong>2048</strong>    <strong>2049</strong>    <strong>2050</strong>
+                        <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>
+
+    <strong>Coal-Cand       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT1-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT2-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>OCGT-Cand       </strong>     4       5       5       5       5       5       5       5       5       5       5       5       5       5       5       5       5       5        5       5       5       5       5       5       5       5       5       5       5       5 
+    <strong>Advanced Nuclear</strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>SMR-Nuclear     </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       8 
+    <strong>GeoThermal-Cand </strong>     0       0       0       0       0       0       0       0       0       0       0       0       1       1       1       1       1       1        1       1       1       1       1       1       1       1       1       1       1       1 
+    <strong>Solar-Cand      </strong>     0       0       1       1       1       2       3       3       4       5       5       6       6       6       8       8       9       9       11      12      12      12      13      14      14      15      16      17      17      17 
+    <strong>Wind-Cand       </strong>     0       0       0       0       1       1       1       1       2       2       2       2       2       3       3       5       5       5        5       5       5       5       5       5       5       6       6       6       6       7 
+    <strong>Battery4h       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>Battery2h       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       1       1       1       1       1       1        1       1       2       3       3       4       6       6       8       9      10      10 
+
+The total cost of this GEP is: 49,455,171,650.207 USD
+
+First Stage UCP verification
+Year currently under study: 2021- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,629,631.201 USD
+The cost associated with this UCP (Most Net Load) is: 55,218,248.684 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,759,080.347 USD
+The cost associated with this UCP (Least Net Load) is: 28,095,286.83 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,955,757.549 USD
+The average curtailment for the study weeks is: 0
+
+Year 2021 finished.
+
+Year currently under study: 2022- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 58,210,965.422 USD
+The cost associated with this UCP (Most Net Load) is: 57,742,715.281 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,280,697.079 USD
+The cost associated with this UCP (Least Net Load) is: 29,187,886.156 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,433,778.821 USD
+The average curtailment for the study weeks is: 0
+
+Year 2022 finished.
+
+Year currently under study: 2023- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 53,426,814.246 USD
+The cost associated with this UCP (Most Net Load) is: 51,872,490.249 USD
+The cost associated with this UCP (Least Renewable Generation) is: 35,807,712.79 USD
+The cost associated with this UCP (Least Net Load) is: 27,248,729.003 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,461,233.436 USD
+The average curtailment for the study weeks is: 0
+
+Year 2023 finished.
+
+Year currently under study: 2024- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,070,495.642 USD
+The cost associated with this UCP (Most Net Load) is: 54,438,787.202 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,270,001.842 USD
+The cost associated with this UCP (Least Net Load) is: 28,913,788.435 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,425,100.477 USD
+The average curtailment for the study weeks is: 0
+
+Year 2024 finished.
+
+Year currently under study: 2025- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,414,765.056 USD
+The cost associated with this UCP (Most Net Load) is: 55,179,779.007 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,352,407.919 USD
+The cost associated with this UCP (Least Net Load) is: 24,983,001.03 USD
+The cost associated with this UCP (Most Renewable Generation) is: 30,097,738.705 USD
+The average curtailment for the study weeks is: 0
+
+Year 2025 finished.
+
+Year currently under study: 2026- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,306,906.181 USD
+The cost associated with this UCP (Most Net Load) is: 54,510,822.753 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,910,960.308 USD
+The cost associated with this UCP (Least Net Load) is: 45,684,508.844 USD
+The cost associated with this UCP (Most Renewable Generation) is: 36,334,178.735 USD
+The average curtailment for the study weeks is: 0.018
+
+Year 2026 finished.
+
+Year currently under study: 2027- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,435,029.589 USD
+The cost associated with this UCP (Most Net Load) is: 55,896,508.046 USD
+The cost associated with this UCP (Least Renewable Generation) is: 39,011,690.944 USD
+The cost associated with this UCP (Least Net Load) is: 78,055,798.587 USD
+The cost associated with this UCP (Most Renewable Generation) is: 63,382,700.335 USD
+The average curtailment for the study weeks is: 0.04
+
+Year 2027 finished.
+
+Year currently under study: 2028- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 63,485,906.867 USD
+The cost associated with this UCP (Most Net Load) is: 62,846,704.765 USD
+The cost associated with this UCP (Least Renewable Generation) is: 41,760,060.774 USD
+The cost associated with this UCP (Least Net Load) is: 79,069,881.251 USD
+The cost associated with this UCP (Most Renewable Generation) is: 61,027,145.821 USD
+The average curtailment for the study weeks is: 0.043
+
+Year 2028 finished.
+
+Year currently under study: 2029- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 63,553,760.764 USD
+The cost associated with this UCP (Most Net Load) is: 63,950,342.138 USD
+The cost associated with this UCP (Least Renewable Generation) is: 48,985,964.78 USD
+The cost associated with this UCP (Least Net Load) is: 149,645,624.806 USD
+This case curtailment is: 0.24
+The cost associated with this UCP (Most Renewable Generation) is: 121,029,187.94 USD
+The average curtailment for the study weeks is: 0.087
+
+Year 2029 finished.
+
+Year currently under study: 2030- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 67,644,732.756 USD
+The cost associated with this UCP (Least Net Load) is: 192,915,617.857 USD
+This case curtailment is: 0.289
+The cost associated with this UCP (Most Renewable Generation) is: 162,574,808.182 USD
+This case curtailment is: 0.216
+The average curtailment for the study weeks is: 0.191
+
+Year 2030 finished.
+
+Year currently under study: 2031- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 67,487,515.732 USD
+The cost associated with this UCP (Least Net Load) is: 187,444,012.96 USD
+This case curtailment is: 0.272
+The cost associated with this UCP (Most Renewable Generation) is: 156,705,201.835 USD
+This case curtailment is: 0.202
+The average curtailment for the study weeks is: 0.176
+
+Year 2031 finished.
+
+Year currently under study: 2032- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 92,128,122.642 USD
+The cost associated with this UCP (Least Net Load) is: 231,448,106.503 USD
+This case curtailment is: 0.322
+The cost associated with this UCP (Most Renewable Generation) is: 199,179,944.318 USD
+This case curtailment is: 0.251
+The average curtailment for the study weeks is: 0.224
+
+Year 2032 finished.
+
+Year currently under study: 2033- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 86,402,816.499 USD
+The cost associated with this UCP (Least Net Load) is: 221,228,098.279 USD
+This case curtailment is: 0.303
+The cost associated with this UCP (Most Renewable Generation) is: 187,849,774.507 USD
+This case curtailment is: 0.228
+The average curtailment for the study weeks is: 0.202
+
+Year 2033 finished.
+
+Year currently under study: 2034- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 84,675,534.24 USD
+The cost associated with this UCP (Least Net Load) is: 247,017,508.717 USD
+This case curtailment is: 0.294
+The cost associated with this UCP (Most Renewable Generation) is: 211,302,279.443 USD
+This case curtailment is: 0.229
+The average curtailment for the study weeks is: 0.195
+
+Year 2034 finished.
+
+Year currently under study: 2035- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 148,051,051.576 USD
+The cost associated with this UCP (Least Net Load) is: 342,088,917.963 USD
+This case curtailment is: 0.372
+The cost associated with this UCP (Most Renewable Generation) is: 305,813,715.507 USD
+This case curtailment is: 0.311
+The average curtailment for the study weeks is: 0.28
+
+Year 2035 finished.
+
+Year currently under study: 2036- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 143,675,399.479 USD
+The cost associated with this UCP (Least Net Load) is: 405,561,135.507 USD
+This case curtailment is: 0.369
+The cost associated with this UCP (Most Renewable Generation) is: 366,252,365.731 USD
+This case curtailment is: 0.314
+The average curtailment for the study weeks is: 0.273
+
+Year 2036 finished.
+
+Year currently under study: 2037- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 178,534,858.118 USD
+The cost associated with this UCP (Least Net Load) is: 451,398,072.264 USD
+This case curtailment is: 0.39
+The cost associated with this UCP (Most Renewable Generation) is: 410,467,023.546 USD
+This case curtailment is: 0.335
+The average curtailment for the study weeks is: 0.298
+
+Year 2037 finished.
+
+Year currently under study: 2038- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 442,715,815.458 USD
+This case curtailment is: 0.381
+The cost associated with this UCP (Most Renewable Generation) is: 401,628,741.717 USD
+This case curtailment is: 0.321
+The average curtailment for the study weeks is: 0.351
+
+Year 2038 finished.
+
+Year currently under study: 2039- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 541,907,956.789 USD
+This case curtailment is: 0.426
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.426
+
+Year 2039 finished.
+
+Year currently under study: 2040- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 585,262,442.003 USD
+This case curtailment is: 0.439
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.439
+
+Year 2040 finished.
+
+Year currently under study: 2041- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 569,610,600.954 USD
+This case curtailment is: 0.423
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.423
+
+Year 2041 finished.
+
+Year currently under study: 2042- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 554,404,249.419 USD
+This case curtailment is: 0.406
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.406
+
+Year 2042 finished.
+
+Year currently under study: 2043- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 598,059,182.077 USD
+This case curtailment is: 0.418
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.418
+
+Year 2043 finished.
+
+Year currently under study: 2044- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 638,423,072.246 USD
+This case curtailment is: 0.428
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.428
+
+Year 2044 finished.
+
+Year currently under study: 2045- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 618,459,278.348 USD
+This case curtailment is: 0.409
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.409
+
+Year 2045 finished.
+
+Year currently under study: 2046- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 693,399,609.263 USD
+This case curtailment is: 0.42
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.42
+
+Year 2046 finished.
+
+Year currently under study: 2047- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+This case is not feasible.
+Least Net Load is not feasible.
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: �
+
+Year 2047 finished.
+
+Year currently under study: 2048- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+This case is not feasible.
+Least Net Load is not feasible.
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: �
+
+Year 2048 finished.
+
+Year currently under study: 2049- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+This case is not feasible.
+Least Net Load is not feasible.
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: �
+
+Year 2049 finished.
+
+Year currently under study: 2050- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 737,823,216.171 USD
+This case curtailment is: 0.403
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.403
+
+Year 2050 finished.
+
+System Operating Reserve is incremented from 20% to 30%.
+
+This is iteration: 3
+   11-Jun-2023 11:51:51
+
+First Stage: Generation Expansion Problem
+Set parameter Username
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.01
+Set parameter Heuristics to value 0.15
+Set parameter MIPFocus to value 3
+Set parameter NonConvex to value 2
+Set parameter NumericFocus to value 2
+Set parameter Seed to value 959
+Set parameter ImproveStartGap to value 0.03
+Academic license - for non-commercial use only - expires 2024-05-08
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 89081 rows, 46680 columns and 232747 nonzeros
+Model fingerprint: 0x4402b9e1
+Model has 7260 quadratic constraints
+Variable types: 41400 continuous, 5280 integer (3780 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+06]
+  QMatrix range    [5e-01, 5e+02]
+  QLMatrix range   [1e+00, 5e+02]
+  Objective range  [9e+00, 1e+09]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+08]
+Warning: Model contains large objective coefficients
+Presolve removed 61767 rows and 12661 columns
+Presolve time: 0.38s
+Presolved: 44114 rows, 37379 columns, 154553 nonzeros
+Variable types: 29912 continuous, 7467 integer (3593 binary)
+Root relaxation presolve removed 10124 rows and 3440 columns
+Root relaxation presolved: 33990 rows, 33939 columns, 130856 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 4.984596e+10, 18574 iterations, 1.78 seconds (1.11 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4.9846e+10    0  260          - 4.9846e+10      -     -    3s
+H    0     0                    8.801277e+10 4.9846e+10  43.4%     -    4s
+H    0     0                    8.801235e+10 4.9846e+10  43.4%     -    4s
+H    0     0                    8.794221e+10 4.9846e+10  43.3%     -    4s
+     0     0 5.0084e+10    0  627 8.7942e+10 5.0084e+10  43.0%     -   10s
+     0     0 5.0084e+10    0  627 8.7942e+10 5.0084e+10  43.0%     -   10s
+     0     0 5.0088e+10    0  655 8.7942e+10 5.0088e+10  43.0%     -   12s
+     0     0 5.0088e+10    0  655 8.7942e+10 5.0088e+10  43.0%     -   12s
+     0     0 5.0088e+10    0  507 8.7942e+10 5.0088e+10  43.0%     -   16s
+H    0     0                    5.253914e+10 5.0088e+10  4.66%     -   17s
+H    0     0                    5.253824e+10 5.0088e+10  4.66%     -   18s
+H    0     2                    5.253526e+10 5.0088e+10  4.66%     -   18s
+     0     2 5.0088e+10    0  507 5.2535e+10 5.0088e+10  4.66%     -   18s
+     3     8 5.0193e+10    2  562 5.2535e+10 5.0183e+10  4.48%   508   20s
+H   27    32                    5.253207e+10 5.0297e+10  4.26%   398   26s
+H   28    32                    5.253087e+10 5.0298e+10  4.25%   390   26s
+H   29    32                    5.252976e+10 5.0299e+10  4.25%   421   26s
+H   30    32                    5.252669e+10 5.0299e+10  4.24%   411   26s
+    55    63 5.0364e+10    7  452 5.2527e+10 5.0334e+10  4.18%   432   30s
+H   88    99                    5.252395e+10 5.0350e+10  4.14%   399   34s
+H   90    99                    5.252343e+10 5.0352e+10  4.13%   394   34s
+H   92    99                    5.251239e+10 5.0352e+10  4.11%   388   34s
+    98   105 5.1982e+10   10  539 5.2512e+10 5.0353e+10  4.11%   419   36s
+H  123   131                    5.250816e+10 5.0358e+10  4.09%   425   38s
+H  125   131                    5.250766e+10 5.0359e+10  4.09%   427   38s
+H  128   131                    5.250242e+10 5.0359e+10  4.08%   420   38s
+   130   157 5.0383e+10    8  452 5.2502e+10 5.0362e+10  4.08%   418   40s
+H  156   178                    5.249749e+10 5.0363e+10  4.07%   359   42s
+H  157   178                    5.249734e+10 5.0363e+10  4.06%   385   42s
+H  203   249                    5.249298e+10 5.0364e+10  4.06%   349   46s
+H  227   249                    5.249185e+10 5.0365e+10  4.05%   321   46s
+H  276   313                    5.248671e+10 5.0367e+10  4.04%   294   50s
+H  298   313                    5.248352e+10 5.0368e+10  4.03%   284   50s
+H  324   371                    5.248099e+10 5.0368e+10  4.03%   266   53s
+   370   401 5.0370e+10   11  435 5.2481e+10 5.0368e+10  4.03%   246   55s
+H  400   414                    5.248030e+10 5.0369e+10  4.02%   243   56s
+H  408   414                    5.247924e+10 5.0371e+10  4.02%   253   56s
+H  451   482                    5.247867e+10 5.0373e+10  4.01%   235   59s
+   481   524 5.0405e+10    7  453 5.2479e+10 5.0375e+10  4.01%   226   61s
+H  523   552                    5.247858e+10 5.0377e+10  4.00%   211   63s
+H  540   538                    5.119578e+10 5.0377e+10  1.60%   209   63s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+H  551   551                    5.119569e+10 5.0378e+10  1.60%   210   65s
+   551   551 5.0582e+10   10  494 5.1196e+10 5.0379e+10  1.60%   210   65s
+H  552   551                    5.119131e+10 5.0379e+10  1.59%   210   65s
+H  567   575                    5.119087e+10 5.0379e+10  1.59%   220   72s
+H  568   575                    5.119014e+10 5.0379e+10  1.59%   221   72s
+H  576   575                    5.118999e+10 5.0379e+10  1.59%   223   72s
+H  577   575                    5.117223e+10 5.0379e+10  1.55%   223   72s
+H  586   568                    5.105090e+10 5.0379e+10  1.32%   225   72s
+H  594   598                    5.104846e+10 5.0379e+10  1.31%   224   77s
+H  595   597                    5.104743e+10 5.0379e+10  1.31%   224   77s
+H  599   585                    5.092469e+10 5.0379e+10  1.07%   223   77s
+H  626   604                    5.090912e+10 5.0379e+10  1.04%   225   83s
+H  628   604                    5.090374e+10 5.0379e+10  1.03%   225   83s
+H  629   604                    5.089678e+10 5.0379e+10  1.02%   225   83s
+H  631   604                    5.086666e+10 5.0379e+10  0.96%   224   83s
+
+Cutting planes:
+  Learned: 51
+  Lift-and-project: 43
+  Implied bound: 6
+  MIR: 815
+  StrongCG: 10
+  Flow cover: 60
+  Zero half: 3
+  RLT: 2
+  Relax-and-lift: 3
+
+Explored 649 nodes (172414 simplex iterations) in 83.65 seconds (41.12 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 5.08667e+10 5.08968e+10 5.09037e+10 ... 5.119e+10
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 5.086666105082e+10, best bound 5.037916277951e+10, gap 0.9584%
+The accumulated investment decision variable Xit: 
+
+                        <strong>2021</strong>    <strong>2022</strong>    <strong>2023</strong>    <strong>2024</strong>    <strong>2025</strong>    <strong>2026</strong>    <strong>2027</strong>    <strong>2028</strong>    <strong>2029</strong>    <strong>2030</strong>    <strong>2031</strong>    <strong>2032</strong>    <strong>2033</strong>    <strong>2034</strong>    <strong>2035</strong>    <strong>2036</strong>    <strong>2037</strong>    <strong>2038</strong>    <strong>2039</strong>    <strong>2040</strong>    <strong>2041</strong>    <strong>2042</strong>    <strong>2043</strong>    <strong>2044</strong>    <strong>2045</strong>    <strong>2046</strong>    <strong>2047</strong>    <strong>2048</strong>    <strong>2049</strong>    <strong>2050</strong>
+                        <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>
+
+    <strong>Coal-Cand       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT1-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT2-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>OCGT-Cand       </strong>     6       6       6       6       6       6       6       6       6       6       6       6       6       6       6       6        6       6       6       6       6       6       6       6       6       6       6       6       6       6 
+    <strong>Advanced Nuclear</strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>SMR-Nuclear     </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       7 
+    <strong>GeoThermal-Cand </strong>     0       0       0       0       0       0       0       0       1       1       1       1       1       1       1       1        1       1       1       1       1       1       1       1       1       1       1       1       1       1 
+    <strong>Solar-Cand      </strong>     0       0       1       1       1       2       2       3       4       4       5       6       7       7       8       9       10      10      11      11      12      13      13      13      14      15      16      17      17      17 
+    <strong>Wind-Cand       </strong>     0       0       0       0       1       1       1       1       2       2       2       2       3       4       4       4        4       4       4       4       5       5       6       6       6       7       7       7       7       8 
+    <strong>Battery4h       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>Battery2h       </strong>     0       0       0       0       1       1       1       1       1       1       1       1       1       1       1       1        1       2       3       5       5       5       8       8       9       9      10      11      14      14 
+
+The total cost of this GEP is: 50,866,661,050.82 USD
+
+First Stage UCP verification
+Year currently under study: 2021- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,629,631.201 USD
+The cost associated with this UCP (Most Net Load) is: 55,218,248.684 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,759,080.347 USD
+The cost associated with this UCP (Least Net Load) is: 28,095,286.83 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,955,757.549 USD
+The average curtailment for the study weeks is: 0
+
+Year 2021 finished.
+
+Year currently under study: 2022- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 58,210,965.422 USD
+The cost associated with this UCP (Most Net Load) is: 57,742,715.281 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,280,697.079 USD
+The cost associated with this UCP (Least Net Load) is: 29,187,886.156 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,433,778.821 USD
+The average curtailment for the study weeks is: 0
+
+Year 2022 finished.
+
+Year currently under study: 2023- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 53,426,814.246 USD
+The cost associated with this UCP (Most Net Load) is: 51,872,490.249 USD
+The cost associated with this UCP (Least Renewable Generation) is: 35,807,712.79 USD
+The cost associated with this UCP (Least Net Load) is: 27,248,729.003 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,461,233.436 USD
+The average curtailment for the study weeks is: 0
+
+Year 2023 finished.
+
+Year currently under study: 2024- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,070,495.642 USD
+The cost associated with this UCP (Most Net Load) is: 54,438,787.202 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,270,001.842 USD
+The cost associated with this UCP (Least Net Load) is: 28,913,788.435 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,425,100.477 USD
+The average curtailment for the study weeks is: 0
+
+Year 2024 finished.
+
+Year currently under study: 2025- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,148,935.07 USD
+The cost associated with this UCP (Most Net Load) is: 54,849,378.389 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,230,951.484 USD
+The cost associated with this UCP (Least Net Load) is: 24,309,221.817 USD
+The cost associated with this UCP (Most Renewable Generation) is: 29,972,438.543 USD
+The average curtailment for the study weeks is: 0
+
+Year 2025 finished.
+
+Year currently under study: 2026- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,002,133.873 USD
+The cost associated with this UCP (Most Net Load) is: 54,186,868.713 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,769,498.725 USD
+The cost associated with this UCP (Least Net Load) is: 41,064,071.606 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,108,811.623 USD
+The average curtailment for the study weeks is: 0.013
+
+Year 2026 finished.
+
+Year currently under study: 2027- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 61,395,727.911 USD
+The cost associated with this UCP (Most Net Load) is: 60,004,272.875 USD
+The cost associated with this UCP (Least Renewable Generation) is: 39,979,694.479 USD
+The cost associated with this UCP (Least Net Load) is: 39,257,073.885 USD
+The cost associated with this UCP (Most Renewable Generation) is: 34,198,391.651 USD
+The average curtailment for the study weeks is: 0.009
+
+Year 2027 finished.
+
+Year currently under study: 2028- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 62,980,541.059 USD
+The cost associated with this UCP (Most Net Load) is: 62,278,706.64 USD
+The cost associated with this UCP (Least Renewable Generation) is: 40,309,072.254 USD
+The cost associated with this UCP (Least Net Load) is: 74,070,355.791 USD
+The cost associated with this UCP (Most Renewable Generation) is: 56,131,181.258 USD
+The average curtailment for the study weeks is: 0.028
+
+Year 2028 finished.
+
+Year currently under study: 2029- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 62,121,997.113 USD
+The cost associated with this UCP (Most Net Load) is: 62,379,405.067 USD
+The cost associated with this UCP (Least Renewable Generation) is: 46,487,391.043 USD
+The cost associated with this UCP (Least Net Load) is: 135,478,143.36 USD
+The cost associated with this UCP (Most Renewable Generation) is: 116,028,197.031 USD
+The average curtailment for the study weeks is: 0.073
+
+Year 2029 finished.
+
+Year currently under study: 2030- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 69,797,345.878 USD
+The cost associated with this UCP (Most Net Load) is: 69,782,628.606 USD
+The cost associated with this UCP (Least Renewable Generation) is: 48,755,770.413 USD
+The cost associated with this UCP (Least Net Load) is: 134,051,329.853 USD
+The cost associated with this UCP (Most Renewable Generation) is: 111,037,929.399 USD
+The average curtailment for the study weeks is: 0.066
+
+Year 2030 finished.
+
+Year currently under study: 2031- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 73,259,287.908 USD
+The cost associated with this UCP (Most Net Load) is: 74,356,461.545 USD
+The cost associated with this UCP (Least Renewable Generation) is: 63,996,302.265 USD
+The cost associated with this UCP (Least Net Load) is: 177,418,271.057 USD
+This case curtailment is: 0.222
+The cost associated with this UCP (Most Renewable Generation) is: 151,495,331.477 USD
+The average curtailment for the study weeks is: 0.093
+
+Year 2031 finished.
+
+Year currently under study: 2032- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 76,410,884.763 USD
+The cost associated with this UCP (Most Net Load) is: 79,038,039.364 USD
+The cost associated with this UCP (Least Renewable Generation) is: 87,564,404.115 USD
+The cost associated with this UCP (Least Net Load) is: 225,263,187.577 USD
+This case curtailment is: 0.302
+The cost associated with this UCP (Most Renewable Generation) is: 193,805,154.774 USD
+This case curtailment is: 0.238
+The average curtailment for the study weeks is: 0.126
+
+Year 2032 finished.
+
+Year currently under study: 2033- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 118,836,627.623 USD
+The cost associated with this UCP (Least Net Load) is: 302,116,326.057 USD
+This case curtailment is: 0.35
+The cost associated with this UCP (Most Renewable Generation) is: 268,601,758.661 USD
+This case curtailment is: 0.289
+The average curtailment for the study weeks is: 0.257
+
+Year 2033 finished.
+
+Year currently under study: 2034- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 114,386,971.121 USD
+The cost associated with this UCP (Least Net Load) is: 330,159,581.103 USD
+This case curtailment is: 0.347
+The cost associated with this UCP (Most Renewable Generation) is: 294,541,554.879 USD
+This case curtailment is: 0.29
+The average curtailment for the study weeks is: 0.25
+
+Year 2034 finished.
+
+Year currently under study: 2035- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 147,771,168.699 USD
+The cost associated with this UCP (Least Net Load) is: 374,881,435.345 USD
+This case curtailment is: 0.371
+The cost associated with this UCP (Most Renewable Generation) is: 337,791,616.692 USD
+This case curtailment is: 0.314
+The average curtailment for the study weeks is: 0.28
+
+Year 2035 finished.
+
+Year currently under study: 2036- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 182,962,998.124 USD
+The cost associated with this UCP (Least Net Load) is: 421,100,034.829 USD
+This case curtailment is: 0.394
+The cost associated with this UCP (Most Renewable Generation) is: 381,668,902.911 USD
+This case curtailment is: 0.336
+The average curtailment for the study weeks is: 0.307
+
+Year 2036 finished.
+
+Year currently under study: 2037- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 219,961,009.126 USD
+This case curtailment is: 0.221
+The cost associated with this UCP (Least Net Load) is: 467,615,276.169 USD
+This case curtailment is: 0.419
+The cost associated with this UCP (Most Renewable Generation) is: 427,800,884.155 USD
+This case curtailment is: 0.363
+The average curtailment for the study weeks is: 0.334
+
+Year 2037 finished.
+
+Year currently under study: 2038- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 209,002,873.356 USD
+The cost associated with this UCP (Least Net Load) is: 453,095,303.932 USD
+This case curtailment is: 0.401
+The cost associated with this UCP (Most Renewable Generation) is: 412,832,756.813 USD
+This case curtailment is: 0.345
+The average curtailment for the study weeks is: 0.314
+
+Year 2038 finished.
+
+Year currently under study: 2039- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 241,075,476.411 USD
+This case curtailment is: 0.219
+The cost associated with this UCP (Least Net Load) is: 491,890,044.844 USD
+This case curtailment is: 0.414
+The cost associated with this UCP (Most Renewable Generation) is: 450,277,812.187 USD
+This case curtailment is: 0.358
+The average curtailment for the study weeks is: 0.33
+
+Year 2039 finished.
+
+Year currently under study: 2040- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 226,501,179.625 USD
+The cost associated with this UCP (Least Net Load) is: 473,426,640.424 USD
+This case curtailment is: 0.393
+The cost associated with this UCP (Most Renewable Generation) is: 430,883,981.84 USD
+This case curtailment is: 0.336
+The average curtailment for the study weeks is: 0.306
+
+Year 2040 finished.
+
+Year currently under study: 2041- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 262,641,966.999 USD
+This case curtailment is: 0.212
+The cost associated with this UCP (Least Net Load) is: 552,685,827.672 USD
+This case curtailment is: 0.411
+The cost associated with this UCP (Most Renewable Generation) is: 508,896,191.202 USD
+This case curtailment is: 0.358
+The average curtailment for the study weeks is: 0.327
+
+Year 2041 finished.
+
+Year currently under study: 2042- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 595,585,865.436 USD
+This case curtailment is: 0.423
+The cost associated with this UCP (Most Renewable Generation) is: 554,895,489.562 USD
+This case curtailment is: 0.373
+The average curtailment for the study weeks is: 0.398
+
+Year 2042 finished.
+
+Year currently under study: 2043- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 606,997,351.824 USD
+This case curtailment is: 0.406
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.406
+
+Year 2043 finished.
+
+Year currently under study: 2044- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 595,329,273.137 USD
+This case curtailment is: 0.393
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.393
+
+Year 2044 finished.
+
+Year currently under study: 2045- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 632,968,478.402 USD
+This case curtailment is: 0.4
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.4
+
+Year 2045 finished.
+
+Year currently under study: 2046- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 711,357,337.374 USD
+This case curtailment is: 0.413
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.413
+
+Year 2046 finished.
+
+Year currently under study: 2047- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 748,316,805.682 USD
+This case curtailment is: 0.418
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.418
+
+Year 2047 finished.
+
+Year currently under study: 2048- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 786,721,480 USD
+This case curtailment is: 0.423
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.423
+
+Year 2048 finished.
+
+Year currently under study: 2049- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 760,418,632.954 USD
+This case curtailment is: 0.404
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.404
+
+Year 2049 finished.
+
+Year currently under study: 2050- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 756,670,460.692 USD
+This case curtailment is: 0.395
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.395
+
+Year 2050 finished.
+
+System Operating Reserve is incremented from 30% to 40%.
+
+This is iteration: 4
+   11-Jun-2023 11:59:45
+
+First Stage: Generation Expansion Problem
+Set parameter Username
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.01
+Set parameter Heuristics to value 0.15
+Set parameter MIPFocus to value 3
+Set parameter NonConvex to value 2
+Set parameter NumericFocus to value 2
+Set parameter Seed to value 959
+Set parameter ImproveStartGap to value 0.03
+Academic license - for non-commercial use only - expires 2024-05-08
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 89081 rows, 46680 columns and 232747 nonzeros
+Model fingerprint: 0x15d24a58
+Model has 7260 quadratic constraints
+Variable types: 41400 continuous, 5280 integer (3780 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+06]
+  QMatrix range    [5e-01, 5e+02]
+  QLMatrix range   [1e+00, 5e+02]
+  Objective range  [9e+00, 1e+09]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+08]
+Warning: Model contains large objective coefficients
+Presolve removed 61767 rows and 12661 columns
+Presolve time: 0.38s
+Presolved: 44114 rows, 37379 columns, 154553 nonzeros
+Variable types: 29912 continuous, 7467 integer (3593 binary)
+Root relaxation presolve removed 10153 rows and 3440 columns
+Root relaxation presolved: 33961 rows, 33939 columns, 130798 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 5.160428e+10, 18183 iterations, 1.78 seconds (1.10 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 5.1604e+10    0  293          - 5.1604e+10      -     -    3s
+H    0     0                    1.415213e+11 5.1604e+10  63.5%     -    4s
+H    0     0                    1.415083e+11 5.1604e+10  63.5%     -    4s
+H    0     0                    1.415061e+11 5.1604e+10  63.5%     -    4s
+H    0     0                    1.032315e+11 5.1604e+10  50.0%     -    7s
+H    0     0                    1.032027e+11 5.1604e+10  50.0%     -    7s
+     0     0 5.1858e+10    0  642 1.0320e+11 5.1858e+10  49.8%     -   10s
+     0     0 5.1858e+10    0  642 1.0320e+11 5.1858e+10  49.8%     -   10s
+     0     0 5.1859e+10    0  661 1.0320e+11 5.1859e+10  49.8%     -   11s
+     0     0 5.1859e+10    0  661 1.0320e+11 5.1859e+10  49.8%     -   12s
+     0     0 5.1859e+10    0  501 1.0320e+11 5.1859e+10  49.8%     -   16s
+H    0     0                    5.326687e+10 5.1859e+10  2.64%     -   16s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+     0     0 5.1859e+10    0  459 5.3267e+10 5.1859e+10  2.64%     -   19s
+H    0     0                    5.304993e+10 5.1859e+10  2.24%     -   19s
+H    0     0                    5.239772e+10 5.1859e+10  1.03%     -   23s
+     0     2 5.1859e+10    0  459 5.2398e+10 5.1859e+10  1.03%     -   23s
+     1     4 5.1948e+10    1  492 5.2398e+10 5.1860e+10  1.03%   741   24s
+
+Cutting planes:
+  Lift-and-project: 28
+  Implied bound: 4
+  MIR: 195
+  Flow cover: 12
+
+Explored 3 nodes (45777 simplex iterations) in 24.24 seconds (9.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 8: 5.23977e+10 5.30499e+10 5.32669e+10 ... 1.41521e+11
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 5.239771894852e+10, best bound 5.191858732854e+10, gap 0.9144%
+The accumulated investment decision variable Xit: 
+
+                        <strong>2021</strong>    <strong>2022</strong>    <strong>2023</strong>    <strong>2024</strong>    <strong>2025</strong>    <strong>2026</strong>    <strong>2027</strong>    <strong>2028</strong>    <strong>2029</strong>    <strong>2030</strong>    <strong>2031</strong>    <strong>2032</strong>    <strong>2033</strong>    <strong>2034</strong>    <strong>2035</strong>    <strong>2036</strong>    <strong>2037</strong>    <strong>2038</strong>    <strong>2039</strong>    <strong>2040</strong>    <strong>2041</strong>    <strong>2042</strong>    <strong>2043</strong>    <strong>2044</strong>    <strong>2045</strong>    <strong>2046</strong>    <strong>2047</strong>    <strong>2048</strong>    <strong>2049</strong>    <strong>2050</strong>
+                        <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>
+
+    <strong>Coal-Cand       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT1-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT2-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>OCGT-Cand       </strong>     7       8       8       8       8       8       8       8       8       8       8       8       8       8       8       8       8        8       8       8       8       8       8       8       8       8       8       8       8       8 
+    <strong>Advanced Nuclear</strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>SMR-Nuclear     </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       8 
+    <strong>GeoThermal-Cand </strong>     0       0       0       0       0       0       0       0       0       0       1       1       1       1       1       1       1        1       1       1       1       1       1       1       1       1       1       1       1       1 
+    <strong>Solar-Cand      </strong>     0       0       1       1       1       2       3       3       4       5       6       6       6       6       7       8       9       10      11      11      12      13      14      14      14      15      16      17      17      17 
+    <strong>Wind-Cand       </strong>     0       0       0       0       1       1       1       1       2       2       2       2       2       3       3       3       4        4       4       4       5       5       5       5       6       6       6       6       7       7 
+    <strong>Battery4h       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>Battery2h       </strong>     0       0       0       0       0       0       0       0       0       0       0       1       3       3       3       4       4        4       4       6       6       6       6       9      11      12      13      14      16      16 
+
+The total cost of this GEP is: 52,397,718,948.516 USD
+
+First Stage UCP verification
+Year currently under study: 2021- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,629,631.201 USD
+The cost associated with this UCP (Most Net Load) is: 55,218,248.684 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,759,080.347 USD
+The cost associated with this UCP (Least Net Load) is: 28,095,286.83 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,955,757.549 USD
+The average curtailment for the study weeks is: 0
+
+Year 2021 finished.
+
+Year currently under study: 2022- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 58,210,965.422 USD
+The cost associated with this UCP (Most Net Load) is: 57,742,715.281 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,280,697.079 USD
+The cost associated with this UCP (Least Net Load) is: 29,187,886.156 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,433,778.821 USD
+The average curtailment for the study weeks is: 0
+
+Year 2022 finished.
+
+Year currently under study: 2023- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 53,426,814.246 USD
+The cost associated with this UCP (Most Net Load) is: 51,872,490.249 USD
+The cost associated with this UCP (Least Renewable Generation) is: 35,807,712.79 USD
+The cost associated with this UCP (Least Net Load) is: 27,248,729.003 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,461,233.436 USD
+The average curtailment for the study weeks is: 0
+
+Year 2023 finished.
+
+Year currently under study: 2024- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,070,495.642 USD
+The cost associated with this UCP (Most Net Load) is: 54,444,958.28 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,270,001.842 USD
+The cost associated with this UCP (Least Net Load) is: 28,913,788.435 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,425,100.477 USD
+The average curtailment for the study weeks is: 0
+
+Year 2024 finished.
+
+Year currently under study: 2025- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,414,765.056 USD
+The cost associated with this UCP (Most Net Load) is: 55,175,696.2 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,352,407.919 USD
+The cost associated with this UCP (Least Net Load) is: 24,983,001.03 USD
+The cost associated with this UCP (Most Renewable Generation) is: 30,097,738.705 USD
+The average curtailment for the study weeks is: 0
+
+Year 2025 finished.
+
+Year currently under study: 2026- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,306,906.181 USD
+The cost associated with this UCP (Most Net Load) is: 54,510,822.753 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,910,960.308 USD
+The cost associated with this UCP (Least Net Load) is: 45,689,107.736 USD
+The cost associated with this UCP (Most Renewable Generation) is: 36,332,402.174 USD
+The average curtailment for the study weeks is: 0.018
+
+Year 2026 finished.
+
+Year currently under study: 2027- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,589,062.702 USD
+The cost associated with this UCP (Most Net Load) is: 55,896,508.046 USD
+The cost associated with this UCP (Least Renewable Generation) is: 39,002,307.478 USD
+The cost associated with this UCP (Least Net Load) is: 76,973,464.617 USD
+The cost associated with this UCP (Most Renewable Generation) is: 63,382,700.335 USD
+The average curtailment for the study weeks is: 0.039
+
+Year 2027 finished.
+
+Year currently under study: 2028- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 63,253,464.936 USD
+The cost associated with this UCP (Most Net Load) is: 62,606,852.095 USD
+The cost associated with this UCP (Least Renewable Generation) is: 41,760,060.774 USD
+The cost associated with this UCP (Least Net Load) is: 78,182,631.027 USD
+The cost associated with this UCP (Most Renewable Generation) is: 61,028,324.831 USD
+The average curtailment for the study weeks is: 0.033
+
+Year 2028 finished.
+
+Year currently under study: 2029- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 63,035,069.185 USD
+The cost associated with this UCP (Most Net Load) is: 63,419,826.268 USD
+The cost associated with this UCP (Least Renewable Generation) is: 48,987,809.269 USD
+The cost associated with this UCP (Least Net Load) is: 139,575,948.51 USD
+The cost associated with this UCP (Most Renewable Generation) is: 117,878,930.651 USD
+The average curtailment for the study weeks is: 0.069
+
+Year 2029 finished.
+
+Year currently under study: 2030- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 66,117,317.15 USD
+The cost associated with this UCP (Most Net Load) is: 67,333,405.358 USD
+The cost associated with this UCP (Least Renewable Generation) is: 67,656,762.243 USD
+The cost associated with this UCP (Least Net Load) is: 183,773,348.253 USD
+This case curtailment is: 0.245
+The cost associated with this UCP (Most Renewable Generation) is: 162,970,525.368 USD
+This case curtailment is: 0.217
+The average curtailment for the study weeks is: 0.106
+
+Year 2030 finished.
+
+Year currently under study: 2031- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 71,353,063.101 USD
+The cost associated with this UCP (Most Net Load) is: 76,359,714.403 USD
+The cost associated with this UCP (Least Renewable Generation) is: 94,858,674.322 USD
+The cost associated with this UCP (Least Net Load) is: 228,842,042.264 USD
+This case curtailment is: 0.283
+The cost associated with this UCP (Most Renewable Generation) is: 205,311,449.745 USD
+This case curtailment is: 0.258
+The average curtailment for the study weeks is: 0.134
+
+Year 2031 finished.
+
+Year currently under study: 2032- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 76,116,103.129 USD
+The cost associated with this UCP (Most Net Load) is: 78,680,415.485 USD
+The cost associated with this UCP (Least Renewable Generation) is: 87,554,549.746 USD
+The cost associated with this UCP (Least Net Load) is: 220,765,661.047 USD
+This case curtailment is: 0.261
+The cost associated with this UCP (Most Renewable Generation) is: 193,805,807.803 USD
+This case curtailment is: 0.238
+The average curtailment for the study weeks is: 0.118
+
+Year 2032 finished.
+
+Year currently under study: 2033- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 84,112,088.196 USD
+The cost associated with this UCP (Most Net Load) is: 84,606,020.517 USD
+The cost associated with this UCP (Least Renewable Generation) is: 79,436,081.511 USD
+The cost associated with this UCP (Least Net Load) is: 207,997,235.454 USD
+This case curtailment is: 0.237
+The cost associated with this UCP (Most Renewable Generation) is: 178,188,693.556 USD
+This case curtailment is: 0.215
+The average curtailment for the study weeks is: 0.103
+
+Year 2033 finished.
+
+Year currently under study: 2034- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 89,301,594.704 USD
+The cost associated with this UCP (Most Net Load) is: 90,264,423.301 USD
+The cost associated with this UCP (Least Renewable Generation) is: 77,897,318.579 USD
+The cost associated with this UCP (Least Net Load) is: 229,909,182.413 USD
+This case curtailment is: 0.245
+The cost associated with this UCP (Most Renewable Generation) is: 200,969,951.679 USD
+This case curtailment is: 0.218
+The average curtailment for the study weeks is: 0.102
+
+Year 2034 finished.
+
+Year currently under study: 2035- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 93,042,212.553 USD
+The cost associated with this UCP (Most Net Load) is: 96,159,448.042 USD
+The cost associated with this UCP (Least Renewable Generation) is: 102,692,590.115 USD
+The cost associated with this UCP (Least Net Load) is: 274,325,129.976 USD
+This case curtailment is: 0.277
+The cost associated with this UCP (Most Renewable Generation) is: 243,924,639.065 USD
+This case curtailment is: 0.251
+The average curtailment for the study weeks is: 0.123
+
+Year 2035 finished.
+
+Year currently under study: 2036- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 101,470,287.451 USD
+The cost associated with this UCP (Most Net Load) is: 107,604,863.158 USD
+The cost associated with this UCP (Least Renewable Generation) is: 129,831,383.757 USD
+The cost associated with this UCP (Least Net Load) is: 315,102,565.851 USD
+This case curtailment is: 0.302
+The cost associated with this UCP (Most Renewable Generation) is: 282,319,257.081 USD
+This case curtailment is: 0.281
+The average curtailment for the study weeks is: 0.143
+
+Year 2036 finished.
+
+Year currently under study: 2037- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 119,041,467.399 USD
+The cost associated with this UCP (Most Net Load) is: 130,624,302.941 USD
+The cost associated with this UCP (Least Renewable Generation) is: 163,692,953.419 USD
+The cost associated with this UCP (Least Net Load) is: 388,727,426.718 USD
+This case curtailment is: 0.338
+The cost associated with this UCP (Most Renewable Generation) is: 357,592,118.444 USD
+This case curtailment is: 0.311
+The average curtailment for the study weeks is: 0.174
+
+Year 2037 finished.
+
+Year currently under study: 2038- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 199,396,148.278 USD
+The cost associated with this UCP (Least Net Load) is: 434,722,236.412 USD
+This case curtailment is: 0.359
+The cost associated with this UCP (Most Renewable Generation) is: 403,719,767.129 USD
+This case curtailment is: 0.338
+The average curtailment for the study weeks is: 0.294
+
+Year 2038 finished.
+
+Year currently under study: 2039- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 235,692,729.309 USD
+This case curtailment is: 0.213
+The cost associated with this UCP (Least Net Load) is: 487,538,303.428 USD
+This case curtailment is: 0.411
+The cost associated with this UCP (Most Renewable Generation) is: 445,290,726.469 USD
+This case curtailment is: 0.352
+The average curtailment for the study weeks is: 0.325
+
+Year 2039 finished.
+
+Year currently under study: 2040- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 220,682,963.376 USD
+The cost associated with this UCP (Least Net Load) is: 468,508,116.156 USD
+This case curtailment is: 0.389
+The cost associated with this UCP (Most Renewable Generation) is: 425,761,958.063 USD
+This case curtailment is: 0.332
+The average curtailment for the study weeks is: 0.301
+
+Year 2040 finished.
+
+Year currently under study: 2041- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 256,610,210.905 USD
+This case curtailment is: 0.205
+The cost associated with this UCP (Least Net Load) is: 547,828,701.074 USD
+This case curtailment is: 0.409
+The cost associated with this UCP (Most Renewable Generation) is: 503,604,461.763 USD
+This case curtailment is: 0.355
+The average curtailment for the study weeks is: 0.323
+
+Year 2041 finished.
+
+Year currently under study: 2042- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 293,300,496.25 USD
+This case curtailment is: 0.226
+The cost associated with this UCP (Least Net Load) is: 590,010,744.365 USD
+This case curtailment is: 0.419
+The cost associated with this UCP (Most Renewable Generation) is: 545,482,241.176 USD
+This case curtailment is: 0.366
+The average curtailment for the study weeks is: 0.337
+
+Year 2042 finished.
+
+Year currently under study: 2043- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 331,262,044.157 USD
+This case curtailment is: 0.246
+The cost associated with this UCP (Least Net Load) is: 634,242,451.115 USD
+This case curtailment is: 0.431
+The cost associated with this UCP (Most Renewable Generation) is: 588,040,221.82 USD
+This case curtailment is: 0.378
+The average curtailment for the study weeks is: 0.351
+
+Year 2043 finished.
+
+Year currently under study: 2044- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 309,660,399.481 USD
+This case curtailment is: 0.216
+The cost associated with this UCP (Least Net Load) is: 609,321,957.027 USD
+This case curtailment is: 0.409
+The cost associated with this UCP (Most Renewable Generation) is: 561,182,893.755 USD
+This case curtailment is: 0.356
+The average curtailment for the study weeks is: 0.327
+
+Year 2044 finished.
+
+Year currently under study: 2045- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 290,753,424.431 USD
+The cost associated with this UCP (Least Net Load) is: 622,546,416.017 USD
+This case curtailment is: 0.394
+The cost associated with this UCP (Most Renewable Generation) is: 573,549,711.649 USD
+This case curtailment is: 0.342
+The average curtailment for the study weeks is: 0.308
+
+Year 2045 finished.
+
+Year currently under study: 2046- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 325,889,264.718 USD
+This case curtailment is: 0.206
+The cost associated with this UCP (Least Net Load) is: 660,818,386.653 USD
+This case curtailment is: 0.401
+The cost associated with this UCP (Most Renewable Generation) is: 612,330,934.894 USD
+This case curtailment is: 0.351
+The average curtailment for the study weeks is: 0.319
+
+Year 2046 finished.
+
+Year currently under study: 2047- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 699,247,723.647 USD
+This case curtailment is: 0.407
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.407
+
+Year 2047 finished.
+
+Year currently under study: 2048- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 737,345,298.269 USD
+This case curtailment is: 0.412
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.412
+
+Year 2048 finished.
+
+Year currently under study: 2049- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 748,922,785.825 USD
+This case curtailment is: 0.398
+This case is not feasible.
+Most Renewable Generation is not feasible.
+The average curtailment for the study weeks is: 0.398
+
+Year 2049 finished.
+
+Year currently under study: 2050- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 316,572,642.894 USD
+The cost associated with this UCP (Least Net Load) is: 699,711,707.432 USD
+This case curtailment is: 0.369
+The cost associated with this UCP (Most Renewable Generation) is: 648,891,785.713 USD
+This case curtailment is: 0.333
+The average curtailment for the study weeks is: 0.295
+
+Year 2050 finished.
+
+System Operating Reserve is incremented from 40% to 50%.
+
+This is iteration: 5
+   11-Jun-2023 12:07:13
+
+First Stage: Generation Expansion Problem
+Set parameter Username
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.01
+Set parameter Heuristics to value 0.15
+Set parameter MIPFocus to value 3
+Set parameter NonConvex to value 2
+Set parameter NumericFocus to value 2
+Set parameter Seed to value 959
+Set parameter ImproveStartGap to value 0.03
+Academic license - for non-commercial use only - expires 2024-05-08
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 89081 rows, 46680 columns and 232747 nonzeros
+Model fingerprint: 0xd8e0516f
+Model has 7260 quadratic constraints
+Variable types: 41400 continuous, 5280 integer (3780 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+06]
+  QMatrix range    [5e-01, 5e+02]
+  QLMatrix range   [1e+00, 5e+02]
+  Objective range  [9e+00, 1e+09]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+08]
+Warning: Model contains large objective coefficients
+Presolve removed 61767 rows and 12661 columns
+Presolve time: 0.36s
+Presolved: 44114 rows, 37379 columns, 154553 nonzeros
+Variable types: 29912 continuous, 7467 integer (3593 binary)
+Root relaxation presolve removed 10181 rows and 3440 columns
+Root relaxation presolved: 33933 rows, 33939 columns, 130742 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 5.299715e+10, 18355 iterations, 1.82 seconds (1.20 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 5.2997e+10    0  360          - 5.2997e+10      -     -    4s
+H    0     0                    1.280123e+11 5.2997e+10  58.6%     -    4s
+H    0     0                    1.279684e+11 5.2997e+10  58.6%     -    4s
+H    0     0                    1.278009e+11 5.2997e+10  58.5%     -    4s
+H    0     0                    8.548080e+10 5.2997e+10  38.0%     -    7s
+H    0     0                    8.543851e+10 5.2997e+10  38.0%     -    7s
+     0     0 5.3190e+10    0  589 8.5439e+10 5.3190e+10  37.7%     -   10s
+     0     0 5.3190e+10    0  589 8.5439e+10 5.3190e+10  37.7%     -   11s
+     0     0 5.3194e+10    0  601 8.5439e+10 5.3194e+10  37.7%     -   12s
+     0     0 5.3194e+10    0  602 8.5439e+10 5.3194e+10  37.7%     -   12s
+     0     0 5.3194e+10    0  509 8.5439e+10 5.3194e+10  37.7%     -   16s
+H    0     0                    5.638587e+10 5.3194e+10  5.66%     -   17s
+H    0     2                    5.636044e+10 5.3194e+10  5.62%     -   18s
+     0     2 5.3194e+10    0  509 5.6360e+10 5.3194e+10  5.62%     -   18s
+     3     8 5.3330e+10    2  572 5.6360e+10 5.3227e+10  5.56%   495   20s
+H   27    32                    5.629753e+10 5.3353e+10  5.23%   484   27s
+    47    53 5.3383e+10    8  519 5.6298e+10 5.3383e+10  5.18%   595   30s
+H   56    61                    5.626863e+10 5.3388e+10  5.12%   566   31s
+H   57    61                    5.625187e+10 5.3389e+10  5.09%   557   31s
+    72    84 5.3466e+10    7  475 5.6252e+10 5.3401e+10  5.07%   669   35s
+H   85    90                    5.620686e+10 5.3402e+10  4.99%   574   36s
+H   87    90                    5.620132e+10 5.3402e+10  4.98%   564   36s
+   116   140 5.3423e+10    8  432 5.6201e+10 5.3412e+10  4.96%   502   41s
+H  170   206                    5.617642e+10 5.3414e+10  4.92%   381   45s
+H  251   292                    5.616897e+10 5.3416e+10  4.90%   295   51s
+H  260   292                    5.615482e+10 5.3417e+10  4.88%   288   51s
+H  278   292                    5.614888e+10 5.3417e+10  4.87%   275   51s
+H  308   293                    5.388228e+10 5.3418e+10  0.86%   276   54s
+
+Cutting planes:
+  Learned: 103
+  Lift-and-project: 35
+  Implied bound: 6
+  MIR: 807
+  StrongCG: 12
+  Flow cover: 70
+  Zero half: 3
+  Relax-and-lift: 3
+
+Explored 316 nodes (108042 simplex iterations) in 54.55 seconds (25.03 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 5.38823e+10 5.61489e+10 5.61548e+10 ... 5.62975e+10
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 5.388227614223e+10, best bound 5.341820027758e+10, gap 0.8613%
+The accumulated investment decision variable Xit: 
+
+                        <strong>2021</strong>    <strong>2022</strong>    <strong>2023</strong>    <strong>2024</strong>    <strong>2025</strong>    <strong>2026</strong>    <strong>2027</strong>    <strong>2028</strong>    <strong>2029</strong>    <strong>2030</strong>    <strong>2031</strong>    <strong>2032</strong>    <strong>2033</strong>    <strong>2034</strong>    <strong>2035</strong>    <strong>2036</strong>    <strong>2037</strong>    <strong>2038</strong>    <strong>2039</strong>    <strong>2040</strong>    <strong>2041</strong>    <strong>2042</strong>    <strong>2043</strong>    <strong>2044</strong>    <strong>2045</strong>    <strong>2046</strong>    <strong>2047</strong>    <strong>2048</strong>    <strong>2049</strong>    <strong>2050</strong>
+                        <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>
+
+    <strong>Coal-Cand       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT1-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT2-Cand      </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>OCGT-Cand       </strong>     8       9       9       9       9       9       9       9       9       9       9       9       9       9       9       9        9       9       9       9       9       9       9       9       9       9       9       9       9       9 
+    <strong>Advanced Nuclear</strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>SMR-Nuclear     </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       7 
+    <strong>GeoThermal-Cand </strong>     0       0       0       0       0       0       1       1       1       1       1       1       1       1       1       1        1       1       1       1       1       1       1       1       1       1       1       1       1       1 
+    <strong>Solar-Cand      </strong>     0       0       1       1       1       2       3       3       3       4       5       6       6       7       8       9       10      11      11      12      12      13      14      14      15      16      17      17      17      17 
+    <strong>Wind-Cand       </strong>     0       0       0       0       1       1       1       1       1       2       2       2       2       3       3       4        4       4       5       5       5       5       5       6       6       6       6       6       8       8 
+    <strong>Battery4h       </strong>     0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0        0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>Battery2h       </strong>     0       0       0       0       1       1       1       2       3       3       3       3       4       4       4       4        4       4       5       6       8      11      11      12      13      14      15      18      20      20 
+
+The total cost of this GEP is: 53,882,276,142.231 USD
+
+First Stage UCP verification
+Year currently under study: 2021- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,629,631.201 USD
+The cost associated with this UCP (Most Net Load) is: 55,218,248.684 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,759,080.347 USD
+The cost associated with this UCP (Least Net Load) is: 28,095,286.83 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,955,757.549 USD
+The average curtailment for the study weeks is: 0
+
+Year 2021 finished.
+
+Year currently under study: 2022- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 58,210,965.422 USD
+The cost associated with this UCP (Most Net Load) is: 57,742,715.281 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,280,697.079 USD
+The cost associated with this UCP (Least Net Load) is: 29,187,886.156 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,433,778.821 USD
+The average curtailment for the study weeks is: 0
+
+Year 2022 finished.
+
+Year currently under study: 2023- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 53,426,814.246 USD
+The cost associated with this UCP (Most Net Load) is: 51,872,490.249 USD
+The cost associated with this UCP (Least Renewable Generation) is: 35,807,712.79 USD
+The cost associated with this UCP (Least Net Load) is: 27,248,729.003 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,461,233.436 USD
+The average curtailment for the study weeks is: 0
+
+Year 2023 finished.
+
+Year currently under study: 2024- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,070,495.642 USD
+The cost associated with this UCP (Most Net Load) is: 54,444,958.28 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,270,001.842 USD
+The cost associated with this UCP (Least Net Load) is: 28,913,788.435 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,425,100.477 USD
+The average curtailment for the study weeks is: 0
+
+Year 2024 finished.
+
+Year currently under study: 2025- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,146,141.222 USD
+The cost associated with this UCP (Most Net Load) is: 54,850,665.387 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,230,951.484 USD
+The cost associated with this UCP (Least Net Load) is: 24,309,221.817 USD
+The cost associated with this UCP (Most Renewable Generation) is: 29,973,518.293 USD
+The average curtailment for the study weeks is: 0
+
+Year 2025 finished.
+
+Year currently under study: 2026- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,002,759.448 USD
+The cost associated with this UCP (Most Net Load) is: 54,186,815.821 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,769,272.758 USD
+The cost associated with this UCP (Least Net Load) is: 41,064,071.606 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,108,811.623 USD
+The average curtailment for the study weeks is: 0.013
+
+Year 2026 finished.
+
+Year currently under study: 2027- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,763,442.445 USD
+The cost associated with this UCP (Most Net Load) is: 55,105,144.471 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,810,578.081 USD
+The cost associated with this UCP (Least Net Load) is: 72,526,196.404 USD
+The cost associated with this UCP (Most Renewable Generation) is: 58,561,196.071 USD
+The average curtailment for the study weeks is: 0.035
+
+Year 2027 finished.
+
+Year currently under study: 2028- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 62,378,881.572 USD
+The cost associated with this UCP (Most Net Load) is: 61,421,517.512 USD
+The cost associated with this UCP (Least Renewable Generation) is: 39,268,014.646 USD
+The cost associated with this UCP (Least Net Load) is: 69,277,972.895 USD
+The cost associated with this UCP (Most Renewable Generation) is: 51,269,196.327 USD
+The average curtailment for the study weeks is: 0.023
+
+Year 2028 finished.
+
+Year currently under study: 2029- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 69,759,838.45 USD
+The cost associated with this UCP (Most Net Load) is: 68,738,475.183 USD
+The cost associated with this UCP (Least Renewable Generation) is: 43,379,101.158 USD
+The cost associated with this UCP (Least Net Load) is: 62,390,007.466 USD
+The cost associated with this UCP (Most Renewable Generation) is: 46,680,064.663 USD
+The average curtailment for the study weeks is: 0.026
+
+Year 2029 finished.
+
+Year currently under study: 2030- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 69,214,902.853 USD
+The cost associated with this UCP (Most Net Load) is: 69,324,657.474 USD
+The cost associated with this UCP (Least Renewable Generation) is: 45,296,770.04 USD
+The cost associated with this UCP (Least Net Load) is: 123,434,654.324 USD
+The cost associated with this UCP (Most Renewable Generation) is: 101,175,337.22 USD
+The average curtailment for the study weeks is: 0.06
+
+Year 2030 finished.
+
+Year currently under study: 2031- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 72,147,909.217 USD
+The cost associated with this UCP (Most Net Load) is: 72,773,897.797 USD
+The cost associated with this UCP (Least Renewable Generation) is: 57,958,252.629 USD
+The cost associated with this UCP (Least Net Load) is: 166,501,161.355 USD
+This case curtailment is: 0.205
+The cost associated with this UCP (Most Renewable Generation) is: 141,713,349.927 USD
+The average curtailment for the study weeks is: 0.084
+
+Year 2031 finished.
+
+Year currently under study: 2032- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 74,805,384.672 USD
+The cost associated with this UCP (Most Net Load) is: 76,382,287.465 USD
+The cost associated with this UCP (Least Renewable Generation) is: 79,832,006.548 USD
+The cost associated with this UCP (Least Net Load) is: 211,133,663.815 USD
+This case curtailment is: 0.25
+The cost associated with this UCP (Most Renewable Generation) is: 183,956,746.849 USD
+This case curtailment is: 0.226
+The average curtailment for the study weeks is: 0.11
+
+Year 2032 finished.
+
+Year currently under study: 2033- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 82,905,977.697 USD
+The cost associated with this UCP (Most Net Load) is: 83,961,597.559 USD
+The cost associated with this UCP (Least Renewable Generation) is: 76,120,752.207 USD
+The cost associated with this UCP (Least Net Load) is: 203,283,705.498 USD
+This case curtailment is: 0.231
+The cost associated with this UCP (Most Renewable Generation) is: 173,424,235.257 USD
+This case curtailment is: 0.209
+The average curtailment for the study weeks is: 0.099
+
+Year 2033 finished.
+
+Year currently under study: 2034- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 84,100,782.61 USD
+The cost associated with this UCP (Most Net Load) is: 87,675,567.586 USD
+The cost associated with this UCP (Least Renewable Generation) is: 101,293,248.526 USD
+The cost associated with this UCP (Least Net Load) is: 273,906,513.271 USD
+This case curtailment is: 0.285
+The cost associated with this UCP (Most Renewable Generation) is: 243,366,064.894 USD
+This case curtailment is: 0.224
+The average curtailment for the study weeks is: 0.121
+
+Year 2034 finished.
+
+Year currently under study: 2035- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 95,941,887.707 USD
+The cost associated with this UCP (Most Net Load) is: 104,676,868.571 USD
+The cost associated with this UCP (Least Renewable Generation) is: 134,356,010.765 USD
+The cost associated with this UCP (Least Net Load) is: 319,002,867.032 USD
+This case curtailment is: 0.315
+The cost associated with this UCP (Most Renewable Generation) is: 290,011,885.222 USD
+This case curtailment is: 0.292
+The average curtailment for the study weeks is: 0.155
+
+Year 2035 finished.
+
+Year currently under study: 2036- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 115,107,182.863 USD
+The cost associated with this UCP (Most Net Load) is: 127,888,249.219 USD
+The cost associated with this UCP (Least Renewable Generation) is: 169,193,526.513 USD
+The cost associated with this UCP (Least Net Load) is: 393,578,691.792 USD
+This case curtailment is: 0.349
+The cost associated with this UCP (Most Renewable Generation) is: 366,538,281.95 USD
+This case curtailment is: 0.324
+The average curtailment for the study weeks is: 0.187
+
+Year 2036 finished.
+
+Year currently under study: 2037- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 134,577,565.095 USD
+The cost associated with this UCP (Most Net Load) is: 151,476,877.413 USD
+The cost associated with this UCP (Least Renewable Generation) is: 205,595,125.664 USD
+This case curtailment is: 0.203
+The cost associated with this UCP (Least Net Load) is: 439,661,333.273 USD
+This case curtailment is: 0.369
+The cost associated with this UCP (Most Renewable Generation) is: 410,443,398.538 USD
+This case curtailment is: 0.344
+The average curtailment for the study weeks is: 0.209
+
+Year 2037 finished.
+
+Year currently under study: 2038- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 157,608,484.227 USD
+The cost associated with this UCP (Most Net Load) is: 177,989,752.276 USD
+The cost associated with this UCP (Least Renewable Generation) is: 243,174,349.789 USD
+This case curtailment is: 0.232
+The cost associated with this UCP (Least Net Load) is: 486,236,913.321 USD
+This case curtailment is: 0.388
+The cost associated with this UCP (Most Renewable Generation) is: 456,180,236.687 USD
+This case curtailment is: 0.368
+The average curtailment for the study weeks is: 0.229
+
+Year 2038 finished.
+
+Year currently under study: 2039- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 158,840,122.286 USD
+The cost associated with this UCP (Most Net Load) is: 178,357,228.412 USD
+The cost associated with this UCP (Least Renewable Generation) is: 231,242,344.888 USD
+This case curtailment is: 0.204
+The cost associated with this UCP (Least Net Load) is: 505,024,383.151 USD
+This case curtailment is: 0.378
+The cost associated with this UCP (Most Renewable Generation) is: 474,617,066.746 USD
+This case curtailment is: 0.351
+The average curtailment for the study weeks is: 0.215
+
+Year 2039 finished.
+
+Year currently under study: 2040- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 180,409,460.01 USD
+The cost associated with this UCP (Most Net Load) is: 202,233,826.079 USD
+The cost associated with this UCP (Least Renewable Generation) is: 264,000,249.856 USD
+This case curtailment is: 0.223
+The cost associated with this UCP (Least Net Load) is: 547,127,968.678 USD
+This case curtailment is: 0.389
+The cost associated with this UCP (Most Renewable Generation) is: 513,197,228.814 USD
+This case curtailment is: 0.363
+The average curtailment for the study weeks is: 0.228
+
+Year 2040 finished.
+
+Year currently under study: 2041- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 247,266,699.018 USD
+The cost associated with this UCP (Least Net Load) is: 530,128,074.064 USD
+This case curtailment is: 0.371
+The cost associated with this UCP (Most Renewable Generation) is: 492,547,716.253 USD
+This case curtailment is: 0.345
+The average curtailment for the study weeks is: 0.304
+
+Year 2041 finished.
+
+Year currently under study: 2042- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 269,591,800.771 USD
+This case curtailment is: 0.205
+The cost associated with this UCP (Least Net Load) is: 560,254,920.117 USD
+This case curtailment is: 0.376
+The cost associated with this UCP (Most Renewable Generation) is: 520,541,729.649 USD
+This case curtailment is: 0.348
+The average curtailment for the study weeks is: 0.31
+
+Year 2042 finished.
+
+Year currently under study: 2043- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 307,111,393.095 USD
+This case curtailment is: 0.224
+The cost associated with this UCP (Least Net Load) is: 610,305,924.978 USD
+This case curtailment is: 0.416
+The cost associated with this UCP (Most Renewable Generation) is: 563,219,393.22 USD
+This case curtailment is: 0.363
+The average curtailment for the study weeks is: 0.334
+
+Year 2043 finished.
+
+Year currently under study: 2044- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 292,635,410.575 USD
+This case curtailment is: 0.201
+The cost associated with this UCP (Least Net Load) is: 629,292,477.284 USD
+This case curtailment is: 0.403
+The cost associated with this UCP (Most Renewable Generation) is: 580,210,178.681 USD
+This case curtailment is: 0.35
+The average curtailment for the study weeks is: 0.318
+
+Year 2044 finished.
+
+Year currently under study: 2045- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 324,765,158.153 USD
+This case curtailment is: 0.214
+The cost associated with this UCP (Least Net Load) is: 666,012,371.979 USD
+This case curtailment is: 0.41
+The cost associated with this UCP (Most Renewable Generation) is: 617,186,678.487 USD
+This case curtailment is: 0.359
+The average curtailment for the study weeks is: 0.328
+
+Year 2045 finished.
+
+Year currently under study: 2046- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 357,800,893.612 USD
+This case curtailment is: 0.227
+The cost associated with this UCP (Least Net Load) is: 704,182,651.648 USD
+This case curtailment is: 0.416
+The cost associated with this UCP (Most Renewable Generation) is: 653,952,482.004 USD
+This case curtailment is: 0.365
+The average curtailment for the study weeks is: 0.336
+
+Year 2046 finished.
+
+Year currently under study: 2047- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 391,049,948.79 USD
+This case curtailment is: 0.237
+The cost associated with this UCP (Least Net Load) is: 742,678,911.135 USD
+This case curtailment is: 0.421
+The cost associated with this UCP (Most Renewable Generation) is: 691,145,132.379 USD
+This case curtailment is: 0.372
+The average curtailment for the study weeks is: 0.343
+
+Year 2047 finished.
+
+Year currently under study: 2048- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 370,991,290.183 USD
+This case curtailment is: 0.211
+The cost associated with this UCP (Least Net Load) is: 717,209,901.741 USD
+This case curtailment is: 0.402
+The cost associated with this UCP (Most Renewable Generation) is: 666,611,024.083 USD
+This case curtailment is: 0.353
+The average curtailment for the study weeks is: 0.322
+
+Year 2048 finished.
+
+Year currently under study: 2049- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+This case is not feasible.
+Least Renewable Generation is not feasible.
+The cost associated with this UCP (Least Net Load) is: 763,916,270.889 USD
+This case curtailment is: 0.392
+The cost associated with this UCP (Most Renewable Generation) is: 712,198,487.822 USD
+This case curtailment is: 0.346
+The average curtailment for the study weeks is: 0.369
+
+Year 2049 finished.
+
+Year currently under study: 2050- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 302,330,672.087 USD
+The cost associated with this UCP (Least Net Load) is: 713,110,532.751 USD
+This case curtailment is: 0.362
+The cost associated with this UCP (Most Renewable Generation) is: 668,052,239.766 USD
+This case curtailment is: 0.33
+The average curtailment for the study weeks is: 0.287
+
+Year 2050 finished.
+
+System Operating Reserve is incremented from 50% to 60%.
+
+This is iteration: 6
+   11-Jun-2023 12:15:44
+
+First Stage: Generation Expansion Problem
+Set parameter Username
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.01
+Set parameter Heuristics to value 0.15
+Set parameter MIPFocus to value 3
+Set parameter NonConvex to value 2
+Set parameter NumericFocus to value 2
+Set parameter Seed to value 959
+Set parameter ImproveStartGap to value 0.03
+Academic license - for non-commercial use only - expires 2024-05-08
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 89081 rows, 46680 columns and 232747 nonzeros
+Model fingerprint: 0x1110afdd
+Model has 7260 quadratic constraints
+Variable types: 41400 continuous, 5280 integer (3780 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+06]
+  QMatrix range    [5e-01, 5e+02]
+  QLMatrix range   [1e+00, 5e+02]
+  Objective range  [9e+00, 1e+09]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+08]
+Warning: Model contains large objective coefficients
+Presolve removed 61767 rows and 12661 columns
+Presolve time: 0.37s
+Presolved: 44114 rows, 37379 columns, 154553 nonzeros
+Variable types: 29912 continuous, 7467 integer (3593 binary)
+Root relaxation presolve removed 10206 rows and 3442 columns
+Root relaxation presolved: 33908 rows, 33937 columns, 130690 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 5.454602e+10, 17946 iterations, 1.74 seconds (1.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 5.4546e+10    0  359          - 5.4546e+10      -     -    3s
+H    0     0                    1.127345e+11 5.4546e+10  51.6%     -    4s
+H    0     0                    1.126925e+11 5.4546e+10  51.6%     -    4s
+H    0     0                    1.125460e+11 5.4546e+10  51.5%     -    4s
+H    0     0                    9.780903e+10 5.4550e+10  44.2%     -    8s
+H    0     0                    9.774629e+10 5.4550e+10  44.2%     -    8s
+     0     0 5.4740e+10    0  573 9.7746e+10 5.4740e+10  44.0%     -   10s
+H    0     0                    9.774122e+10 5.4740e+10  44.0%     -   10s
+     0     0 5.4740e+10    0  573 9.7741e+10 5.4740e+10  44.0%     -   11s
+     0     0 5.4743e+10    0  578 9.7741e+10 5.4743e+10  44.0%     -   12s
+     0     0 5.4743e+10    0  578 9.7741e+10 5.4743e+10  44.0%     -   12s
+     0     0 5.4743e+10    0  500 9.7741e+10 5.4743e+10  44.0%     -   17s
+H    0     0                    5.687232e+10 5.4743e+10  3.74%     -   17s
+H    0     2                    5.681962e+10 5.4743e+10  3.66%     -   19s
+     0     2 5.4743e+10    0  500 5.6820e+10 5.4743e+10  3.66%     -   19s
+     3     8 5.4899e+10    2  551 5.6820e+10 5.4793e+10  3.57%   599   20s
+H   27    30                    5.681916e+10 5.4861e+10  3.45%   556   25s
+H   29    30                    5.678434e+10 5.4861e+10  3.39%   526   25s
+H   57    60                    5.677926e+10 5.4873e+10  3.36%   350   29s
+H   59    60                    5.675113e+10 5.4875e+10  3.31%   339   29s
+    61    64 5.4942e+10   16  511 5.6751e+10 5.4876e+10  3.30%   337   30s
+H   98   141                    5.674829e+10 5.4880e+10  3.29%   227   35s
+H  106   141                    5.673585e+10 5.4880e+10  3.27%   228   35s
+H  120   141                    5.673570e+10 5.4880e+10  3.27%   207   35s
+H  124   141                    5.671350e+10 5.4881e+10  3.23%   228   35s
+   179   209 5.4882e+10   17  469 5.6714e+10 5.4882e+10  3.23%   198   40s
+H  210   241                    5.667486e+10 5.4883e+10  3.16%   195   43s
+   242   298 5.4884e+10   18  509 5.6675e+10 5.4883e+10  3.16%   174   45s
+H  299   305                    5.666763e+10 5.4884e+10  3.15%   149   48s
+H  300   305                    5.665903e+10 5.4885e+10  3.13%   159   48s
+H  301   283                    5.535699e+10 5.4885e+10  0.85%   163   48s
+
+Cutting planes:
+  Learned: 65
+  Lift-and-project: 36
+  Implied bound: 6
+  MIR: 597
+  StrongCG: 8
+  Flow cover: 42
+  RLT: 2
+  Relax-and-lift: 5
+
+Explored 306 nodes (72818 simplex iterations) in 48.81 seconds (18.81 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 5.5357e+10 5.6659e+10 5.66676e+10 ... 5.67793e+10
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 5.535698706452e+10, best bound 5.488571619288e+10, gap 0.8513%
+The accumulated investment decision variable Xit: 
+
+                        <strong>2021</strong>    <strong>2022</strong>    <strong>2023</strong>    <strong>2024</strong>    <strong>2025</strong>    <strong>2026</strong>    <strong>2027</strong>    <strong>2028</strong>    <strong>2029</strong>    <strong>2030</strong>    <strong>2031</strong>    <strong>2032</strong>    <strong>2033</strong>    <strong>2034</strong>    <strong>2035</strong>    <strong>2036</strong>    <strong>2037</strong>    <strong>2038</strong>    <strong>2039</strong>    <strong>2040</strong>    <strong>2041</strong>    <strong>2042</strong>    <strong>2043</strong>    <strong>2044</strong>    <strong>2045</strong>    <strong>2046</strong>    <strong>2047</strong>    <strong>2048</strong>    <strong>2049</strong>    <strong>2050</strong>
+                        <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>
+
+    <strong>Coal-Cand       </strong>      0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT1-Cand      </strong>      0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>CCGT2-Cand      </strong>      0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>OCGT-Cand       </strong>     10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      10      11      11      12      12      12 
+    <strong>Advanced Nuclear</strong>      0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>SMR-Nuclear     </strong>      0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       7 
+    <strong>GeoThermal-Cand </strong>      0       0       0       0       0       0       0       0       0       0       0       1       1       1       1       1       1       1       1       1       1       1       1       1       1       1       1       1       1       1 
+    <strong>Solar-Cand      </strong>      0       0       1       2       2       2       3       3       3       5       5       6       7       8       9      10      11      11      11      11      13      14      14      15      15      16      17      17      17      17 
+    <strong>Wind-Cand       </strong>      0       0       0       0       1       1       1       1       2       2       2       2       3       3       4       4       4       4       4       4       5       5       5       6       6       6       6       6       8       8 
+    <strong>Battery4h       </strong>      0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 
+    <strong>Battery2h       </strong>      0       0       0       0       0       1       1       3       4       4       4       4       4       4       4       4       4       6       9      11      11      11      13      14      16      16      17      20      20      20 
+
+The total cost of this GEP is: 55,356,987,064.523 USD
+
+First Stage UCP verification
+Year currently under study: 2021- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,629,631.201 USD
+The cost associated with this UCP (Most Net Load) is: 55,218,248.684 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,759,080.347 USD
+The cost associated with this UCP (Least Net Load) is: 28,095,286.83 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,955,757.549 USD
+The average curtailment for the study weeks is: 0
+
+Year 2021 finished.
+
+Year currently under study: 2022- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 58,210,965.422 USD
+The cost associated with this UCP (Most Net Load) is: 57,742,715.281 USD
+The cost associated with this UCP (Least Renewable Generation) is: 38,280,697.079 USD
+The cost associated with this UCP (Least Net Load) is: 29,187,886.156 USD
+The cost associated with this UCP (Most Renewable Generation) is: 35,433,778.821 USD
+The average curtailment for the study weeks is: 0
+
+Year 2022 finished.
+
+Year currently under study: 2023- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 53,426,814.246 USD
+The cost associated with this UCP (Most Net Load) is: 51,872,490.249 USD
+The cost associated with this UCP (Least Renewable Generation) is: 35,807,712.79 USD
+The cost associated with this UCP (Least Net Load) is: 27,248,729.003 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,461,233.436 USD
+The average curtailment for the study weeks is: 0
+
+Year 2023 finished.
+
+Year currently under study: 2024- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 51,189,190.412 USD
+The cost associated with this UCP (Most Net Load) is: 50,018,604.835 USD
+The cost associated with this UCP (Least Renewable Generation) is: 34,529,909.561 USD
+The cost associated with this UCP (Least Net Load) is: 36,052,811.822 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,317,393.735 USD
+The average curtailment for the study weeks is: 0.008
+
+Year 2024 finished.
+
+Year currently under study: 2025- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 51,500,801.913 USD
+The cost associated with this UCP (Most Net Load) is: 50,762,361.552 USD
+The cost associated with this UCP (Least Renewable Generation) is: 34,708,867.262 USD
+The cost associated with this UCP (Least Net Load) is: 45,967,840.311 USD
+The cost associated with this UCP (Most Renewable Generation) is: 37,293,281.222 USD
+The average curtailment for the study weeks is: 0.013
+
+Year 2025 finished.
+
+Year currently under study: 2026- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 55,010,164.539 USD
+The cost associated with this UCP (Most Net Load) is: 54,190,423.544 USD
+The cost associated with this UCP (Least Renewable Generation) is: 36,769,272.758 USD
+The cost associated with this UCP (Least Net Load) is: 41,071,060.366 USD
+The cost associated with this UCP (Most Renewable Generation) is: 33,108,811.623 USD
+The average curtailment for the study weeks is: 0.013
+
+Year 2026 finished.
+
+Year currently under study: 2027- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 56,195,494.488 USD
+The cost associated with this UCP (Most Net Load) is: 55,537,730.821 USD
+The cost associated with this UCP (Least Renewable Generation) is: 37,014,293.823 USD
+The cost associated with this UCP (Least Net Load) is: 72,531,401.767 USD
+The cost associated with this UCP (Most Renewable Generation) is: 58,701,954.796 USD
+The average curtailment for the study weeks is: 0.033
+
+Year 2027 finished.
+
+Year currently under study: 2028- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 62,419,765.816 USD
+The cost associated with this UCP (Most Net Load) is: 61,654,303.724 USD
+The cost associated with this UCP (Least Renewable Generation) is: 39,481,302.364 USD
+The cost associated with this UCP (Least Net Load) is: 64,863,036.712 USD
+The cost associated with this UCP (Most Renewable Generation) is: 47,523,869.693 USD
+The average curtailment for the study weeks is: 0.019
+
+Year 2028 finished.
+
+Year currently under study: 2029- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 66,981,014.79 USD
+The cost associated with this UCP (Most Net Load) is: 66,467,177.406 USD
+The cost associated with this UCP (Least Renewable Generation) is: 41,622,565.205 USD
+The cost associated with this UCP (Least Net Load) is: 78,985,083.608 USD
+The cost associated with this UCP (Most Renewable Generation) is: 58,173,273.215 USD
+The average curtailment for the study weeks is: 0.029
+
+Year 2029 finished.
+
+Year currently under study: 2030- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 64,259,196.12 USD
+The cost associated with this UCP (Most Net Load) is: 64,922,813.229 USD
+The cost associated with this UCP (Least Renewable Generation) is: 54,198,701.834 USD
+The cost associated with this UCP (Least Net Load) is: 165,078,505.373 USD
+This case curtailment is: 0.216
+The cost associated with this UCP (Most Renewable Generation) is: 140,605,552.955 USD
+The average curtailment for the study weeks is: 0.081
+
+Year 2030 finished.
+
+Year currently under study: 2031- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 72,387,542.958 USD
+The cost associated with this UCP (Most Net Load) is: 72,942,628.705 USD
+The cost associated with this UCP (Least Renewable Generation) is: 55,322,800.155 USD
+The cost associated with this UCP (Least Net Load) is: 161,919,402.733 USD
+The cost associated with this UCP (Most Renewable Generation) is: 136,108,804.561 USD
+The average curtailment for the study weeks is: 0.081
+
+Year 2031 finished.
+
+Year currently under study: 2032- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 74,364,397.125 USD
+The cost associated with this UCP (Most Net Load) is: 75,705,681.118 USD
+The cost associated with this UCP (Least Renewable Generation) is: 76,459,912.139 USD
+The cost associated with this UCP (Least Net Load) is: 206,454,804.099 USD
+This case curtailment is: 0.243
+The cost associated with this UCP (Most Renewable Generation) is: 178,899,343.337 USD
+This case curtailment is: 0.226
+The average curtailment for the study weeks is: 0.107
+
+Year 2032 finished.
+
+Year currently under study: 2033- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 78,613,059.132 USD
+The cost associated with this UCP (Most Net Load) is: 82,351,169.661 USD
+The cost associated with this UCP (Least Renewable Generation) is: 105,413,507.448 USD
+The cost associated with this UCP (Least Net Load) is: 278,885,561.927 USD
+This case curtailment is: 0.297
+The cost associated with this UCP (Most Renewable Generation) is: 248,814,111.871 USD
+This case curtailment is: 0.24
+The average curtailment for the study weeks is: 0.132
+
+Year 2033 finished.
+
+Year currently under study: 2034- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 92,034,760.738 USD
+The cost associated with this UCP (Most Net Load) is: 103,211,328.428 USD
+The cost associated with this UCP (Least Renewable Generation) is: 139,642,701.003 USD
+The cost associated with this UCP (Least Net Load) is: 324,227,273.027 USD
+This case curtailment is: 0.327
+The cost associated with this UCP (Most Renewable Generation) is: 293,045,246.63 USD
+This case curtailment is: 0.27
+The average curtailment for the study weeks is: 0.161
+
+Year 2034 finished.
+
+Year currently under study: 2035- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 113,000,154.017 USD
+The cost associated with this UCP (Most Net Load) is: 127,141,201.725 USD
+The cost associated with this UCP (Least Renewable Generation) is: 175,512,266.984 USD
+The cost associated with this UCP (Least Net Load) is: 399,852,768.222 USD
+This case curtailment is: 0.362
+The cost associated with this UCP (Most Renewable Generation) is: 366,552,784.698 USD
+This case curtailment is: 0.309
+The average curtailment for the study weeks is: 0.195
+
+Year 2035 finished.
+
+Year currently under study: 2036- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 132,935,384.02 USD
+The cost associated with this UCP (Most Net Load) is: 151,063,952.681 USD
+The cost associated with this UCP (Least Renewable Generation) is: 212,319,993.189 USD
+This case curtailment is: 0.221
+The cost associated with this UCP (Least Net Load) is: 445,925,502.538 USD
+This case curtailment is: 0.382
+The cost associated with this UCP (Most Renewable Generation) is: 411,491,986.201 USD
+This case curtailment is: 0.33
+The average curtailment for the study weeks is: 0.217
+
+Year 2036 finished.
+
+Year currently under study: 2037- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 156,320,260.935 USD
+The cost associated with this UCP (Most Net Load) is: 178,151,914.147 USD
+The cost associated with this UCP (Least Renewable Generation) is: 250,376,843.613 USD
+This case curtailment is: 0.249
+The cost associated with this UCP (Least Net Load) is: 492,140,998.429 USD
+This case curtailment is: 0.4
+The cost associated with this UCP (Most Renewable Generation) is: 456,603,991.348 USD
+This case curtailment is: 0.348
+The average curtailment for the study weeks is: 0.237
+
+Year 2037 finished.
+
+Year currently under study: 2038- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 149,740,043.387 USD
+The cost associated with this UCP (Most Net Load) is: 169,181,483.29 USD
+The cost associated with this UCP (Least Renewable Generation) is: 233,508,333.415 USD
+This case curtailment is: 0.22
+The cost associated with this UCP (Least Net Load) is: 475,939,042.201 USD
+This case curtailment is: 0.38
+The cost associated with this UCP (Most Renewable Generation) is: 444,584,295.978 USD
+This case curtailment is: 0.356
+The average curtailment for the study weeks is: 0.22
+
+Year 2038 finished.
+
+Year currently under study: 2039- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 142,778,821.915 USD
+The cost associated with this UCP (Most Net Load) is: 158,957,422.565 USD
+The cost associated with this UCP (Least Renewable Generation) is: 212,739,043.316 USD
+The cost associated with this UCP (Least Net Load) is: 454,921,117.038 USD
+This case curtailment is: 0.358
+The cost associated with this UCP (Most Renewable Generation) is: 420,393,928.734 USD
+This case curtailment is: 0.331
+The average curtailment for the study weeks is: 0.195
+
+Year 2039 finished.
+
+Year currently under study: 2040- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 141,967,522.256 USD
+The cost associated with this UCP (Most Net Load) is: 155,449,142.761 USD
+The cost associated with this UCP (Least Renewable Generation) is: 197,626,117.024 USD
+The cost associated with this UCP (Least Net Load) is: 439,603,209.195 USD
+This case curtailment is: 0.337
+The cost associated with this UCP (Most Renewable Generation) is: 401,781,806.796 USD
+This case curtailment is: 0.313
+The average curtailment for the study weeks is: 0.174
+
+Year 2040 finished.
+
+Year currently under study: 2041- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 184,856,913.207 USD
+The cost associated with this UCP (Most Net Load) is: 208,050,783.907 USD
+The cost associated with this UCP (Least Renewable Generation) is: 278,151,307.37 USD
+This case curtailment is: 0.223
+The cost associated with this UCP (Least Net Load) is: 567,235,673.231 USD
+This case curtailment is: 0.387
+The cost associated with this UCP (Most Renewable Generation) is: 531,588,559.874 USD
+This case curtailment is: 0.362
+The average curtailment for the study weeks is: 0.226
+
+Year 2041 finished.
+
+Year currently under study: 2042- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 209,213,699.628 USD
+The cost associated with this UCP (Most Net Load) is: 235,492,264.97 USD
+The cost associated with this UCP (Least Renewable Generation) is: 315,207,419.841 USD
+This case curtailment is: 0.243
+The cost associated with this UCP (Least Net Load) is: 612,146,397.751 USD
+This case curtailment is: 0.4
+The cost associated with this UCP (Most Renewable Generation) is: 574,197,249.485 USD
+This case curtailment is: 0.374
+The average curtailment for the study weeks is: 0.24
+
+Year 2042 finished.
+
+Year currently under study: 2043- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 297,767,068.93 USD
+This case curtailment is: 0.216
+The cost associated with this UCP (Least Net Load) is: 595,900,239.862 USD
+This case curtailment is: 0.383
+The cost associated with this UCP (Most Renewable Generation) is: 553,461,684.457 USD
+This case curtailment is: 0.357
+The average curtailment for the study weeks is: 0.319
+
+Year 2043 finished.
+
+Year currently under study: 2044- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 328,510,672.566 USD
+This case curtailment is: 0.229
+The cost associated with this UCP (Least Net Load) is: 665,012,049.526 USD
+This case curtailment is: 0.395
+The cost associated with this UCP (Most Renewable Generation) is: 624,020,065.227 USD
+This case curtailment is: 0.368
+The average curtailment for the study weeks is: 0.331
+
+Year 2044 finished.
+
+Year currently under study: 2045- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 310,107,047.384 USD
+This case curtailment is: 0.202
+The cost associated with this UCP (Least Net Load) is: 646,299,867.139 USD
+This case curtailment is: 0.377
+The cost associated with this UCP (Most Renewable Generation) is: 602,038,966.634 USD
+This case curtailment is: 0.349
+The average curtailment for the study weeks is: 0.31
+
+Year 2045 finished.
+
+Year currently under study: 2046- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 347,323,017.364 USD
+This case curtailment is: 0.218
+The cost associated with this UCP (Least Net Load) is: 690,361,841.903 USD
+This case curtailment is: 0.388
+The cost associated with this UCP (Most Renewable Generation) is: 643,851,757.614 USD
+This case curtailment is: 0.36
+The average curtailment for the study weeks is: 0.322
+
+Year 2046 finished.
+
+Year currently under study: 2047- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 379,765,194.692 USD
+This case curtailment is: 0.229
+The cost associated with this UCP (Least Net Load) is: 729,984,099.839 USD
+This case curtailment is: 0.393
+The cost associated with this UCP (Most Renewable Generation) is: 680,653,930.359 USD
+This case curtailment is: 0.366
+The average curtailment for the study weeks is: 0.329
+
+Year 2047 finished.
+
+Year currently under study: 2048- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 359,029,922.39 USD
+This case curtailment is: 0.201
+The cost associated with this UCP (Least Net Load) is: 707,696,627.713 USD
+This case curtailment is: 0.397
+The cost associated with this UCP (Most Renewable Generation) is: 654,071,325.478 USD
+This case curtailment is: 0.346
+The average curtailment for the study weeks is: 0.315
+
+Year 2048 finished.
+
+Year currently under study: 2049- Scenario: 1
+This case is not feasible.
+Most Demand is not feasible.
+This case is not feasible.
+Most Net Load is not feasible.
+The cost associated with this UCP (Least Renewable Generation) is: 346,363,580.112 USD
+The cost associated with this UCP (Least Net Load) is: 756,723,184.048 USD
+This case curtailment is: 0.371
+The cost associated with this UCP (Most Renewable Generation) is: 706,832,599.727 USD
+This case curtailment is: 0.342
+The average curtailment for the study weeks is: 0.298
+
+Year 2049 finished.
+
+Year currently under study: 2050- Scenario: 1
+The cost associated with this UCP (Most Demand) is: 216,009,254.9 USD
+The cost associated with this UCP (Most Net Load) is: 243,326,626.054 USD
+The cost associated with this UCP (Least Renewable Generation) is: 301,585,297.282 USD
+The cost associated with this UCP (Least Net Load) is: 713,032,363.22 USD
+This case curtailment is: 0.361
+The cost associated with this UCP (Most Renewable Generation) is: 668,324,903.244 USD
+This case curtailment is: 0.329
+The average curtailment for the study weeks is: 0.193
+
+Year 2050 finished.
+
